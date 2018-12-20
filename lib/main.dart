@@ -11,64 +11,151 @@ void main() {
   );
 }
 
-Widget _buildAppBar() {
-  return AppBar(
-    title: Text("Pensieve"),
-  );
-}
-
-Widget _buildDrawer(BuildContext context) {
-  return Drawer(
-    child: ListView(
-      padding: EdgeInsets.zero,
-      children: <Widget>[
-        DrawerHeader(
-          // TODO: put a logo maybe here
-          child: Text('Pensieve'),
-          decoration: BoxDecoration(color: Colors.blue),
-        ),
-        ListTile(
-            title: Text('About'),
-            onTap: () {
-              Navigator.pop(context);
-            }),
-        ListTile(
-            title: Text('Feedback'),
-            onTap: () {
-              Navigator.pop(context);
-            }),
-        ListTile(
-            title: Text('Settings'),
-            onTap: () {
-              Navigator.pop(context);
-            }),
-        ListTile(
-            title: Text('Backup'),
-            onTap: () {
-              Navigator.pop(context);
-            }),
-      ],
-    ),
-  );
-}
-
-Widget _buildAddButton() {
-  return FloatingActionButton(
-      child: Icon(Icons.add), tooltip: 'Add', onPressed: null);
-}
-
-class HomePage extends StatelessWidget {
+class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // using a Scaffold (which is stateful) to manage the layout
+    return Center(child: Text('About'),);
+  }
+}
+
+class FeedbackPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Feedback'),);
+  }
+}
+
+class SettingsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Settings'),);
+  }
+}
+
+class BackupPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Backup'),);
+  }
+}
+
+class AddPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Add'),);
+  }
+}
+
+class SearchPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Search'),);
+  }
+}
+
+class HomePage extends StatefulWidget {
+  @override
+  HomePageState createState() {
+    return HomePageState();
+  }
+}
+
+class HomePageState extends State<HomePage> {
+  String state = "default";
+
+  Widget _buildAppBar() {
+    return AppBar(
+      title: Text("Pensieve"),
+    );
+  }
+
+  Widget _buildDrawer(BuildContext context) {
+    final options = ["About", "Feedback", "Settings", "Backup"];
+
+    // auto (i.e. var) does not work as dart is unable to identify the type as
+    // List<Widget> later on
+    List<Widget> drawerTiles = [];
+    for (final opt in options) {
+      drawerTiles.add(ListTile(
+          title: Text(opt),
+          onTap: () {
+            _onSelection(opt);
+            Navigator.pop(context);
+          }),
+      );
+    }
+
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: <Widget>[
+          DrawerHeader(
+            // TODO: put a logo here maybe
+            child: Text('Pensieve'),
+            decoration: BoxDecoration(color: Colors.blue),
+          ),
+          Column(children: drawerTiles),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAddButton() {
+    return FloatingActionButton(
+        child: Icon(Icons.add), tooltip: 'Add', onPressed: _onAdd);
+  }
+
+  Widget _buildBody() {
+    switch (state) {
+      case "About":
+        return AboutPage();
+        break;
+      case "Feedback":
+        return FeedbackPage();
+        break;
+      case "Settings":
+        return SettingsPage();
+        break;
+      case "Backup":
+        return BackupPage();
+        break;
+      case "Add":
+        return AddPage();
+        break;
+      case "Search":
+        return SearchPage();
+        break;
+    }
+
+    // default
+    return Center(
+      child: Text("Home"),
+    );
+  }
+
+  void _onAdd() {
+    _onSelection("Add");
+  }
+
+  void _onSearch() {
+    _onSelection("Search");
+  }
+
+  void _onSelection(String option) {
+    // causes to rerun the build
+    setState(() {
+      state = option;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
       drawer: _buildDrawer(context),
       floatingActionButton: _buildAddButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-      body: Center(
-        child: Text('Display'),
-      ),
+      body: _buildBody(),
     );
   }
 }
