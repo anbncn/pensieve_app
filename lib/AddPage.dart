@@ -44,24 +44,38 @@ class ClickableTextState extends State<ClickableText> {
   Widget build(BuildContext context) {
     List<String> split = widget.text.split(" ");
     List<Widget> splitWords = [];
+    List<Widget> splitCols = [];
+
     final maxRowLen = 22;
     int currRowLen = 0;
     for (final word in split) {
       if (currRowLen + word.length >= maxRowLen) {
-        splitWords.add(Text("*"));
-        break;
+        splitCols.add(Column(
+          children: <Widget>[
+            Row(children: splitWords,),
+          ],
+        ));
+        splitWords = [];
+        currRowLen = 0;
       }
       splitWords.add(_text(word));
       splitWords.add(Text(" "));
       currRowLen += word.length;
     }
 
+    if (splitWords.length > 0) {
+      splitCols.add(Column(
+        children: <Widget>[
+          Row(children: splitWords,),
+        ],
+      ));
+    }
+
     return Container(
-      padding: EdgeInsets.all(16.0),
       child: Column(
         children: <Widget>[
           Text(widget.time.toString() + "\n"),
-          Row(children: splitWords),
+          Column(children: splitCols),
         ],
       ),
     );

@@ -24,6 +24,7 @@ class SearchPageState extends State<SearchPage> {
     for (final msg in messages) {
       searchResults.add(ListTile(
         title: Text(msg.text),
+        onTap: () { /*open a new page to edit/delete*/ },
       ));
     }
 
