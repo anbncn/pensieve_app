@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 class FeedbackPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Feedback'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Feedback'),
+      ),
+      body: Center(
+        child: Text('Feedback'),
+      ),
     );
   }
 }

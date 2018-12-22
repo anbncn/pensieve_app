@@ -52,7 +52,9 @@ class ClickableTextState extends State<ClickableText> {
       if (currRowLen + word.length >= maxRowLen) {
         splitCols.add(Column(
           children: <Widget>[
-            Row(children: splitWords,),
+            Row(
+              children: splitWords,
+            ),
           ],
         ));
         splitWords = [];
@@ -66,7 +68,9 @@ class ClickableTextState extends State<ClickableText> {
     if (splitWords.length > 0) {
       splitCols.add(Column(
         children: <Widget>[
-          Row(children: splitWords,),
+          Row(
+            children: splitWords,
+          ),
         ],
       ));
     }
@@ -136,24 +140,30 @@ class AddPageState extends State<AddPage> {
     return Scaffold(
       // otherwise the textfield resizes to accommodate the keyboard
       resizeToAvoidBottomPadding: false,
+      appBar: AppBar(
+        title: Text('Add'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.check),
+            onPressed: () {
+              final time = DateTime.now();
+              var keys = widget.pensieve.getKeywords(time, controller.text);
+              _showDialog(context, time, controller.text, keys);
+            },
+          )
+        ],
+      ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: TextField(
           decoration: InputDecoration(hintText: "Put your thoughts here"),
           controller: controller,
           maxLines: 10,
+          maxLength: 1000,
           enabled: true,
           autofocus: true,
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            final time = DateTime.now();
-            var keys = widget.pensieve.getKeywords(time, controller.text);
-            _showDialog(context, time, controller.text, keys);
-          },
-          tooltip: "Submit!",
-          child: Icon(Icons.check)),
     );
   }
 

@@ -16,13 +16,11 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  String state = "Home";
   Pensieve pensieve = Pensieve();
 
-  Widget _buildAppBar() {
-    final text = (state == "Home") ? "Pensieve" : state;
+  Widget _buildAppBar(BuildContext context) {
     return AppBar(
-      title: Text(text),
+      title: Text("Pensieve"),
     );
   }
 
@@ -35,11 +33,10 @@ class HomePageState extends State<HomePage> {
     for (final opt in options) {
       drawerTiles.add(
         ListTile(
-          // TODO: change color of the text depending on state
             title: Text(opt),
             onTap: () {
-              _onSelection(opt);
               Navigator.pop(context);
+              _onSelection(context, opt);
             }),
       );
     }
@@ -59,63 +56,55 @@ class HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildAddButton() {
-    if (state == "Home") {
-      return FloatingActionButton(
-          child: Icon(Icons.add), tooltip: 'Add', onPressed: _onAdd);
-    }
-    return null;
+  Widget _buildAddButton(BuildContext context) {
+    return FloatingActionButton(
+      child: Icon(Icons.add),
+      tooltip: 'Add',
+      onPressed: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => AddPage(
+                      pensieve: pensieve,
+                    )));
+      },
+    );
   }
 
-  Widget _buildBody() {
-    switch (state) {
+  Widget _buildBody(BuildContext context) {
+    return SearchPage(
+      pensieve: pensieve,
+    );
+  }
+
+  void _onSelection(BuildContext context, String option) {
+    switch (option) {
       case "About":
-        return AboutPage();
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => AboutPage()));
         break;
       case "Feedback":
-        return FeedbackPage();
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => FeedbackPage()));
         break;
       case "Settings":
-        return SettingsPage();
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => SettingsPage()));
         break;
       case "Backup":
-        return BackupPage();
-        break;
-      case "Add":
-        return AddPage(pensieve: pensieve,);
-        break;
-      case "Search":
-        return SearchPage(pensieve: pensieve,);
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => BackupPage()));
         break;
     }
-
-    // default
-    return SearchPage(pensieve: pensieve,);
-  }
-
-  void _onAdd() {
-    _onSelection("Add");
-  }
-
-  void _onSearch() {
-    _onSelection("Search");
-  }
-
-  void _onSelection(String option) {
-    // causes to rerun the build
-    setState(() {
-      state = option;
-    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _buildAppBar(),
+      appBar: _buildAppBar(context),
       drawer: _buildDrawer(context),
-      floatingActionButton: _buildAddButton(),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-      body: _buildBody(),
+      floatingActionButton: _buildAddButton(context),
+      body: _buildBody(context),
     );
   }
 }

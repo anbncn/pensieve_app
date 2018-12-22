@@ -1,6 +1,7 @@
 import "dart:async";
 import "dart:io";
 import "dart:convert";
+import 'package:flutter/services.dart' show rootBundle;
 
 import "package:path_provider/path_provider.dart";
 
@@ -64,26 +65,36 @@ class FileManager {
   }
 
   Future<List<Message>> read() async {
+    String staticContent = await rootBundle.loadString('assets/messages.json');
+    List<Message> staticResult = _loadContent(staticContent);
+
     try {
       final file = await _localFile;
-      String content = await file.readAsString();
-      print(content);
-      if (content.isEmpty) {
-        print("JSON is empty!");
-        return [];
-      }
+      String dynamicContent = await file.readAsString();
+      print(dynamicContent);
 
-      final jsonParse = json.decode("[" + content + "]");
-      if (jsonParse is Map) {
-        print("JSON is not a list!");
-        return [];
-      }
-
-      print("JSON read done, entries=${jsonParse.length}!");
-      return List<Message>.from(jsonParse.map((i) => Message.fromJson(i)));
+      List<Message> dynamicResult = _loadContent(dynamicContent);
+      return (staticResult + dynamicResult);
     } catch (e) {
+      // for some reason can't print stuff here
+      return staticResult;
+    }
+  }
+
+  List<Message> _loadContent(String content) {
+    if (content.isEmpty) {
+      print("JSON is empty!");
       return [];
     }
+
+    final jsonParse = json.decode("[" + content + "]");
+    if (jsonParse is Map) {
+      print("JSON is not a list!");
+      return [];
+    }
+
+    print("JSON read done, entries=${jsonParse.length}!");
+    return List<Message>.from(jsonParse.map((i) => Message.fromJson(i)));
   }
 }
 

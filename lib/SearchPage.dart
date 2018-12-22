@@ -2,6 +2,22 @@ import 'package:flutter/material.dart';
 
 import "Pensieve.dart";
 
+class TextPage extends StatelessWidget {
+  final Message message;
+
+  TextPage({Key key, this.message}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Message'),
+      ),
+      body: Text(message.text),
+    );
+  }
+}
+
 class SearchPage extends StatefulWidget {
   final Pensieve pensieve;
 
@@ -17,14 +33,25 @@ class SearchPageState extends State<SearchPage> {
   final controller = TextEditingController();
   String input = "";
 
-  List<Widget> _buildSearch() {
+  void _navigateToTextScreen(BuildContext context, Message message) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => TextPage(
+                  message: message,
+                )));
+  }
+
+  List<Widget> _buildSearch(BuildContext context) {
     List<Message> messages = widget.pensieve.find(null, input.split(" "));
 
     List<Widget> searchResults = [];
     for (final msg in messages) {
       searchResults.add(ListTile(
-        title: Text(msg.text),
-        onTap: () { /*open a new page to edit/delete*/ },
+        title: Text(msg.text, maxLines: 2, overflow: TextOverflow.ellipsis),
+        onTap: () {
+          _navigateToTextScreen(context, msg);
+        },
       ));
     }
 
@@ -37,7 +64,7 @@ class SearchPageState extends State<SearchPage> {
     return searchResults;
   }
 
-  Widget _buildInput() {
+  Widget _buildInput(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(16.0),
       child: TextField(
@@ -55,14 +82,15 @@ class SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // otherwise the textfield resizes to accommodate the keyboard
-        resizeToAvoidBottomPadding: false,
-        body: ListView(
-          children: <Widget>[
-            _buildInput(),
-            Column(children: _buildSearch()),
-          ],
-        ));
+      // otherwise the textfield resizes to accommodate the keyboard
+      resizeToAvoidBottomPadding: false,
+      body: Column(
+        children: <Widget>[
+          _buildInput(context),
+          Expanded(child: ListView(children: _buildSearch(context))),
+        ],
+      ),
+    );
   }
 
   @override
