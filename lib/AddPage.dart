@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import "Pensieve.dart";
 
@@ -40,6 +41,14 @@ class ClickableTextState extends State<ClickableText> {
     );
   }
 
+  Widget _time(DateTime time) {
+    final formatter = new DateFormat.yMMMd().add_jm();
+    final dateStr = formatter.format(time);
+    return Text.rich(
+        TextSpan(text: dateStr + "\n", style: TextStyle(fontWeight: FontWeight.bold)),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     List<String> split = widget.text.split(" ");
@@ -75,10 +84,13 @@ class ClickableTextState extends State<ClickableText> {
       ));
     }
 
-    return Container(
+    // wrap in SingleChildScrollView to make AlertDialog size reasonable
+    // Using Container or Column directly makes AlertDialog use all space
+    return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(widget.time.toString() + "\n"),
+          _time(widget.time),
           Column(children: splitCols),
         ],
       ),
@@ -159,7 +171,7 @@ class AddPageState extends State<AddPage> {
           decoration: InputDecoration(hintText: "Put your thoughts here"),
           controller: controller,
           maxLines: 10,
-          maxLength: 1000,
+          maxLength: 400,
           enabled: true,
           autofocus: true,
         ),

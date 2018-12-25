@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 
 class AboutPage extends StatelessWidget {
+  Widget _buildText(BuildContext context, msg, author) {
+    return Text.rich(
+      TextSpan(
+        children: [
+          TextSpan(text: msg, style: TextStyle(),),
+          TextSpan(text: "\n\n",),
+          TextSpan(text: author, style: TextStyle(fontStyle: FontStyle.italic)),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final msg =
@@ -10,18 +22,16 @@ class AboutPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('About'),
       ),
-      body: Center(
-        child: Text.rich(
-          TextSpan(
-            text: msg,
-            children: <TextSpan>[
-              TextSpan(
-                text: "\n",
-              ),
-              TextSpan(
-                  text: author, style: TextStyle(fontWeight: FontWeight.bold)),
-            ],
-          ),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Expanded(flex: 1, child: Container(),),
+            Expanded(flex: 2, child: _buildText(context, msg, author),),
+            Expanded(flex: 10, child: Container(),),
+          ],
         ),
       ),
     );
