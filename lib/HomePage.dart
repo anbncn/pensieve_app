@@ -93,7 +93,7 @@ class HomePageState extends State<HomePage> {
         break;
       case "Backup":
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => BackupPage()));
+            context, MaterialPageRoute(builder: (context) => BackupPage(pensieve: pensieve)));
         break;
     }
   }
