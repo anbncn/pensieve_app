@@ -1,168 +1,2746 @@
-  {
-    "time": "2018-12-22 12:26:45.333",
-    "keys": [
-      "apple",
-      "banana"
-    ],
-    "text": "apple and banana1"
-  },
-  {
-    "time": "2019-12-22 12:26:45.333",
-    "keys": [
-      "apple",
-      "orange"
-    ],
-    "text": "apple and orange2"
-  },
-  {
-  "time": "2013-12-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange3"
-  },
-  {
-  "time": "2012-12-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange4"
-  },
-  {
-  "time": "2011-12-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange5"
-  },
-  {
-  "time": "2019-11-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange6"
-  },
-  {
-  "time": "2019-12-21 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange7"
-  },
-  {
-  "time": "2019-12-22 12:16:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange8"
-  },
-  {
-  "time": "2019-12-22 12:26:15.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange9"
-  },
-  {
-  "time": "2019-12-12 12:26:15.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange10"
-  },
-  {
-  "time": "2016-09-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange11"
-  },
-  {
-  "time": "2019-03-03 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange12"
-  },
-  {
-  "time": "2019-12-03 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange123"
-  },
-  {
-  "time": "2019-03-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange23"
-  },
-  {
-  "time": "2019-02-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange14"
-  },
-  {
-  "time": "2002-02-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange15"
-  },
-  {
-  "time": "2002-12-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange16"
-  },
-  {
-  "time": "2001-12-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange17"
-  },
-  {
-  "time": "2009-12-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange18"
-  },
-  {
-  "time": "2008-12-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange181"
-  },
-  {
-  "time": "2007-12-22 12:26:45.333",
-  "keys": [
-  "apple",
-  "orange"
-  ],
-  "text": "apple and orange123"
-  }
+[
+    {
+        "keys": [
+            "life", 
+            "mahatma", 
+            "message", 
+            "gandhi"
+        ], 
+        "text": "My life is my message. Mahatma Gandhi\n", 
+        "time": "2018-12-26 11:17:56.046469"
+    }, 
+    {
+        "keys": [
+            "seneca", 
+            "lived", 
+            "well", 
+            "long", 
+            "thing", 
+            "have", 
+            "main"
+        ], 
+        "text": "Not how long, but how well you have lived is the main thing. Seneca\n", 
+        "time": "2018-12-26 11:17:56.046611"
+    }, 
+    {
+        "keys": [
+            "love", 
+            "vinci", 
+            "smile", 
+            "trouble", 
+            "leonardo", 
+            "those"
+        ], 
+        "text": "I love those who can smile in trouble. Leonardo da Vinci\n", 
+        "time": "2018-12-26 11:17:56.046637"
+    }, 
+    {
+        "keys": [
+            "what", 
+            "forever", 
+            "because", 
+            "love", 
+            "often", 
+            "lost", 
+            "means", 
+            "bruce", 
+            "developing", 
+            "learner", 
+            "life", 
+            "also", 
+            "made", 
+            "simplifying", 
+            "time", 
+            "waste", 
+            "dont"
+        ], 
+        "text": "Time means a lot to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and simplifying. If you love life, don\u2019t waste time, for time is what life is made up of. Bruce Lee\n", 
+        "time": "2018-12-26 11:17:56.046693"
+    }, 
+    {
+        "keys": [
+            "happens", 
+            "life", 
+            "busy", 
+            "plans", 
+            "youre", 
+            "when", 
+            "what", 
+            "other", 
+            "lennon", 
+            "making", 
+            "john"
+        ], 
+        "text": "Life is what happens when you\u2019re busy making other plans. John Lennon\n", 
+        "time": "2018-12-26 11:17:56.046725"
+    }, 
+    {
+        "keys": [
+            "marcus", 
+            "little", 
+            "thinking", 
+            "very", 
+            "make", 
+            "within", 
+            "life", 
+            "yourself", 
+            "needed", 
+            "aurelius", 
+            "your", 
+            "happy"
+        ], 
+        "text": "Very little is needed to make a happy life; it is all within yourself, in your way of thinking. Marcus Aurelius\n", 
+        "time": "2018-12-26 11:17:56.046768"
+    }, 
+    {
+        "keys": [
+            "loved", 
+            "what", 
+            "gide", 
+            "hated", 
+            "better", 
+            "andre", 
+            "than"
+        ], 
+        "text": "It is better to be hated for what you are than to be loved for what you are not. Andre Gide\n", 
+        "time": "2018-12-26 11:17:56.046802"
+    }, 
+    {
+        "keys": [
+            "benjamin", 
+            "then", 
+            "life", 
+            "made", 
+            "love", 
+            "squander", 
+            "that", 
+            "thou", 
+            "stuff", 
+            "franklin", 
+            "time", 
+            "dost"
+        ], 
+        "text": "Dost thou love life? Then do not squander time, for that is the stuff life is made of. Benjamin Franklin\n", 
+        "time": "2018-12-26 11:17:56.046832"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "like", 
+            "samuel", 
+            "playing", 
+            "instrument", 
+            "learning", 
+            "butler", 
+            "violin", 
+            "public", 
+            "goes"
+        ], 
+        "text": "Life is like playing a violin in public and learning the instrument as one goes on. Samuel Butler\n", 
+        "time": "2018-12-26 11:17:56.046863"
+    }, 
+    {
+        "keys": [
+            "count", 
+            "life", 
+            "that", 
+            "tweet", 
+            "lincoln", 
+            "years", 
+            "click", 
+            "abraham", 
+            "your"
+        ], 
+        "text": "In the end, it\u2019s not the years in your life that count. It\u2019s the life in your years. Abraham Lincoln Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.046897"
+    }, 
+    {
+        "keys": [
+            "like", 
+            "watching", 
+            "dance", 
+            "gotta", 
+            "nobody", 
+            "purkey", 
+            "william", 
+            "tweet", 
+            "youve", 
+            "click", 
+            "theres"
+        ], 
+        "text": "You\u2019ve gotta dance like there\u2019s nobody watching. William W. Purkey Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.046922"
+    }, 
+    {
+        "keys": [
+            "living", 
+            "life", 
+            "william", 
+            "belief", 
+            "that", 
+            "james", 
+            "create", 
+            "worth", 
+            "will", 
+            "believe", 
+            "your", 
+            "fact", 
+            "help"
+        ], 
+        "text": "Believe that life is worth living and your belief will help create the fact. William James\n", 
+        "time": "2018-12-26 11:17:56.046950"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "hubbard", 
+            "elbert", 
+            "never", 
+            "alive", 
+            "will", 
+            "seriously", 
+            "take"
+        ], 
+        "text": "Do not take life too seriously. You will never get out of it alive. Elbert Hubbard\n", 
+        "time": "2018-12-26 11:17:56.046975"
+    }, 
+    {
+        "keys": [
+            "inspirations", 
+            "sontag", 
+            "curious", 
+            "your", 
+            "forehead", 
+            "eager", 
+            "waiting", 
+            "societys", 
+            "attention", 
+            "connects", 
+            "vitality", 
+            "stay", 
+            "kiss", 
+            "others", 
+            "with", 
+            "paying", 
+            "about", 
+            "shove", 
+            "susan", 
+            "clenched", 
+            "stuff", 
+            "makes"
+        ], 
+        "text": "Do stuff. Be clenched, curious. Not waiting for inspiration\u2019s shove or society\u2019s kiss on your forehead. Pay attention. It\u2019s all about paying attention. Attention is vitality. It connects you with others. It makes you eager. Stay eager. Susan Sontag\n", 
+        "time": "2018-12-26 11:17:56.047028"
+    }, 
+    {
+        "keys": [
+            "wants", 
+            "heart", 
+            "stomach", 
+            "like", 
+            "flaubert", 
+            "diet", 
+            "gustave", 
+            "varied"
+        ], 
+        "text": "The heart, like the stomach, wants a varied diet. Gustave Flaubert\n", 
+        "time": "2018-12-26 11:17:56.047056"
+    }, 
+    {
+        "keys": [
+            "little", 
+            "this", 
+            "crazy", 
+            "gabor", 
+            "keep", 
+            "being", 
+            "sane", 
+            "helps", 
+            "world", 
+            "tell"
+        ], 
+        "text": "I tell you, in this world being a little crazy helps to keep you sane. Zsa Zsa Gabor\n", 
+        "time": "2018-12-26 11:17:56.047082"
+    }, 
+    {
+        "keys": [
+            "william", 
+            "what", 
+            "know", 
+            "shakespeare"
+        ], 
+        "text": "We know what we are, but know not what we may be. William Shakespeare\n", 
+        "time": "2018-12-26 11:17:56.047104"
+    }, 
+    {
+        "keys": [
+            "enjoy", 
+            "life", 
+            "branagh", 
+            "dont", 
+            "just", 
+            "things", 
+            "lighten", 
+            "about", 
+            "kenneth", 
+            "laugh", 
+            "smile", 
+            "worked", 
+            "more"
+        ], 
+        "text": "Lighten up, just enjoy life, smile more, laugh more, and don\u2019t get so worked up about things. Kenneth Branagh\n", 
+        "time": "2018-12-26 11:17:56.047133"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "deal", 
+            "mirren", 
+            "trick", 
+            "learning", 
+            "helen", 
+            "with"
+        ], 
+        "text": "The trick in life is learning how to deal with it. Helen Mirren\n", 
+        "time": "2018-12-26 11:17:56.047155"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "this", 
+            "moment", 
+            "omar", 
+            "khayyam", 
+            "your", 
+            "happy"
+        ], 
+        "text": "Be happy for this moment. This moment is your life. Omar Khayyam\n", 
+        "time": "2018-12-26 11:17:56.047177"
+    }, 
+    {
+        "keys": [
+            "living", 
+            "busy", 
+            "dying", 
+            "king", 
+            "tweet", 
+            "stephen", 
+            "click"
+        ], 
+        "text": "Get busy living or get busy dying. Stephen King Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.047197"
+    }, 
+    {
+        "keys": [
+            "dont", 
+            "than", 
+            "soul", 
+            "wisdom", 
+            "better", 
+            "gain", 
+            "lose", 
+            "world", 
+            "gold", 
+            "marley", 
+            "your", 
+            "silver"
+        ], 
+        "text": "Don\u2019t gain the world and lose your soul, wisdom is better than silver or gold. Bob Marley\n", 
+        "time": "2018-12-26 11:17:56.047225"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "hendrix", 
+            "when", 
+            "live", 
+            "jimi", 
+            "want", 
+            "time", 
+            "thats"
+        ], 
+        "text": "I\u2019m the one that\u2019s got to die when it\u2019s time for me to die, so let me live my life the way I want to. Jimi Hendrix\n", 
+        "time": "2018-12-26 11:17:56.047259"
+    }, 
+    {
+        "keys": [
+            "that", 
+            "most", 
+            "oscar", 
+            "rarest", 
+            "people", 
+            "thing", 
+            "live", 
+            "exist", 
+            "wilde", 
+            "world"
+        ], 
+        "text": "To live is the rarest thing in the world. Most people exist, that is all. Oscar Wilde\n", 
+        "time": "2018-12-26 11:17:56.047287"
+    }, 
+    {
+        "keys": [
+            "imagination", 
+            "suffers", 
+            "from", 
+            "means", 
+            "oscar", 
+            "within", 
+            "lack", 
+            "anyone", 
+            "their", 
+            "lives", 
+            "wilde"
+        ], 
+        "text": "Anyone who lives within their means suffers from a lack of imagination. Oscar Wilde\n", 
+        "time": "2018-12-26 11:17:56.047311"
+    }, 
+    {
+        "keys": [
+            "jacobowski", 
+            "life", 
+            "because", 
+            "whats", 
+            "dont", 
+            "this", 
+            "quote", 
+            "over", 
+            "favorite", 
+            "here", 
+            "leave", 
+            "know", 
+            "reply", 
+            "smile", 
+            "ludwig", 
+            "yours", 
+            "happened"
+        ], 
+        "text": "Don\u2019t cry because it\u2019s over, smile because it happened. Ludwig Jacobowski (This is one of my favorite life quote. Leave a reply here and let me know what\u2019s yours!)\n", 
+        "time": "2018-12-26 11:17:56.047351"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "daring", 
+            "tweet", 
+            "keller", 
+            "adventure", 
+            "helen", 
+            "nothing", 
+            "click", 
+            "either"
+        ], 
+        "text": "Life is either a daring adventure or nothing at all. Helen Keller Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.047376"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "henry", 
+            "direction", 
+            "david", 
+            "live", 
+            "confidently", 
+            "youve", 
+            "imagined", 
+            "your", 
+            "dreams", 
+            "thoreau"
+        ], 
+        "text": "Go confidently in the direction of your dreams! Live the life you\u2019ve imagined. Henry David Thoreau\n", 
+        "time": "2018-12-26 11:17:56.047404"
+    }, 
+    {
+        "keys": [
+            "loved", 
+            "augustine", 
+            "lost", 
+            "never", 
+            "better", 
+            "have", 
+            "than"
+        ], 
+        "text": "Tis better to have loved and lost than never to have loved at all. St. Augustine\n", 
+        "time": "2018-12-26 11:17:56.047428"
+    }, 
+    {
+        "keys": [
+            "right", 
+            "west", 
+            "live", 
+            "only", 
+            "enough", 
+            "once"
+        ], 
+        "text": "You only live once, but if you do it right, once is enough. Mae West\n", 
+        "time": "2018-12-26 11:17:56.047451"
+    }, 
+    {
+        "keys": [
+            "what", 
+            "mind", 
+            "everything", 
+            "buddha", 
+            "become", 
+            "think"
+        ], 
+        "text": "The mind is everything. What you think you become. Buddha\n", 
+        "time": "2018-12-26 11:17:56.047471"
+    }, 
+    {
+        "keys": [
+            "begins", 
+            "thousand", 
+            "step", 
+            "miles", 
+            "with", 
+            "journey"
+        ], 
+        "text": "The journey of a thousand miles begins with one step. Lao Tzu\n", 
+        "time": "2018-12-26 11:17:56.047491"
+    }, 
+    {
+        "keys": [
+            "unexamined", 
+            "living", 
+            "life", 
+            "socrates", 
+            "worth"
+        ], 
+        "text": "The unexamined life is not worth living. Socrates\n", 
+        "time": "2018-12-26 11:17:56.047508"
+    }, 
+    {
+        "keys": [
+            "limited", 
+            "intuition", 
+            "dont", 
+            "opinions", 
+            "others", 
+            "results", 
+            "steve", 
+            "noise", 
+            "have", 
+            "follow", 
+            "your", 
+            "living", 
+            "thinking", 
+            "other", 
+            "inner", 
+            "which", 
+            "peoples", 
+            "waste", 
+            "life", 
+            "someone", 
+            "jobs", 
+            "trapped", 
+            "dogma", 
+            "drown", 
+            "elses", 
+            "with", 
+            "courage", 
+            "most", 
+            "heart", 
+            "important", 
+            "time", 
+            "voice"
+        ], 
+        "text": "Your time is limited, so don\u2019t waste it living someone else\u2019s life. Don\u2019t be trapped by dogma, which is living with the results of other people\u2019s thinking. Don\u2019t let the noise of others\u2019 opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. Steve Jobs\n", 
+        "time": "2018-12-26 11:17:56.047577"
+    }, 
+    {
+        "keys": [
+            "wish", 
+            "mahatma", 
+            "gandhi", 
+            "world", 
+            "change", 
+            "must"
+        ], 
+        "text": "You must be the change you wish to see in the world. Mahatma Gandhi\n", 
+        "time": "2018-12-26 11:17:56.047602"
+    }, 
+    {
+        "keys": [
+            "always", 
+            "robert", 
+            "frost", 
+            "through", 
+            "best"
+        ], 
+        "text": "The best way out is always through. Robert Frost\n", 
+        "time": "2018-12-26 11:17:56.047620"
+    }, 
+    {
+        "keys": [
+            "success", 
+            "bottom", 
+            "patton", 
+            "when", 
+            "bounce", 
+            "high", 
+            "george"
+        ], 
+        "text": "Success is how high you bounce when you hit bottom. George S. Patton\n", 
+        "time": "2018-12-26 11:17:56.047643"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "frittered", 
+            "detail", 
+            "david", 
+            "click", 
+            "simplify", 
+            "tweet", 
+            "thoreau", 
+            "henry", 
+            "away"
+        ], 
+        "text": "Our life is frittered away by detail. Simplify, simplify. Henry David Thoreau Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.047669"
+    }, 
+    {
+        "keys": [
+            "about", 
+            "creating", 
+            "life", 
+            "yourself", 
+            "bernard", 
+            "isnt", 
+            "finding", 
+            "george", 
+            "shaw"
+        ], 
+        "text": "Life isn\u2019t about finding yourself. Life is about creating yourself. George Bernard Shaw\n", 
+        "time": "2018-12-26 11:17:56.047693"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "lived", 
+            "kept", 
+            "eleanor", 
+            "never", 
+            "back", 
+            "alive", 
+            "turn", 
+            "reason", 
+            "whatever", 
+            "curiosity", 
+            "roosevelt", 
+            "must"
+        ], 
+        "text": "Life must be lived and curiosity kept alive. One must never, for whatever reason, turn his back on life. Eleanor Roosevelt\n", 
+        "time": "2018-12-26 11:17:56.047725"
+    }, 
+    {
+        "keys": [
+            "conscience", 
+            "life", 
+            "good", 
+            "this", 
+            "sleepy", 
+            "mark", 
+            "twain", 
+            "ideal", 
+            "books", 
+            "friends"
+        ], 
+        "text": "Good friends, good books, and a sleepy conscience: this is the ideal life. Mark Twain\n", 
+        "time": "2018-12-26 11:17:56.047752"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "simple", 
+            "confucius", 
+            "insist", 
+            "complicated", 
+            "making", 
+            "really"
+        ], 
+        "text": "Life is really simple, but we insist on making it complicated. Confucius\n", 
+        "time": "2018-12-26 11:17:56.047775"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "goal", 
+            "people", 
+            "things", 
+            "albert", 
+            "live", 
+            "want", 
+            "einstein", 
+            "happy"
+        ], 
+        "text": "If you want to live a happy life, tie it to a goal, not to people or things. Albert Einstein\n", 
+        "time": "2018-12-26 11:17:56.047801"
+    }, 
+    {
+        "keys": [
+            "then", 
+            "look", 
+            "nature", 
+            "into", 
+            "einstein", 
+            "albert", 
+            "deep", 
+            "will", 
+            "everything", 
+            "understand", 
+            "better"
+        ], 
+        "text": "Look deep into nature, and then you will understand everything better. Albert Einstein\n", 
+        "time": "2018-12-26 11:17:56.047825"
+    }, 
+    {
+        "keys": [
+            "from", 
+            "striking", 
+            "never", 
+            "keep", 
+            "game", 
+            "babe", 
+            "fear", 
+            "ruth", 
+            "playing"
+        ], 
+        "text": "Never let the fear of striking out keep you from playing the game. Babe Ruth\n", 
+        "time": "2018-12-26 11:17:56.047849"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "love", 
+            "tweet", 
+            "live", 
+            "marley", 
+            "click"
+        ], 
+        "text": "Love the life you live. Live the life you love. Bob Marley Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.047872"
+    }, 
+    {
+        "keys": [
+            "carry", 
+            "winston", 
+            "calm", 
+            "churchill", 
+            "keep"
+        ], 
+        "text": "Keep calm and carry on. Winston Churchill\n", 
+        "time": "2018-12-26 11:17:56.047888"
+    }, 
+    {
+        "keys": [
+            "none", 
+            "love", 
+            "william", 
+            "wrong", 
+            "shakespeare", 
+            "trust"
+        ], 
+        "text": "Love all, trust a few, do wrong to none. William Shakespeare\n", 
+        "time": "2018-12-26 11:17:56.047908"
+    }, 
+    {
+        "keys": [
+            "ours", 
+            "life", 
+            "saved", 
+            "spent", 
+            "lawrence"
+        ], 
+        "text": "Life is ours to be spent, not to be saved. D. H. Lawrence\n", 
+        "time": "2018-12-26 11:17:56.047928"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "death", 
+            "forever", 
+            "chuck", 
+            "short", 
+            "palahniuk"
+        ], 
+        "text": "Life is short, death is forever. Chuck Palahniuk\n", 
+        "time": "2018-12-26 11:17:56.047945"
+    }, 
+    {
+        "keys": [
+            "wide", 
+            "life", 
+            "short", 
+            "shall", 
+            "this", 
+            "wells", 
+            "pass", 
+            "rebecca"
+        ], 
+        "text": "Life is short but it is wide. This too shall pass. Rebecca Wells\n", 
+        "time": "2018-12-26 11:17:56.047967"
+    }, 
+    {
+        "keys": [
+            "pleasure", 
+            "life", 
+            "love", 
+            "greatest", 
+            "euripides"
+        ], 
+        "text": "The greatest pleasure of life is love. Euripides\n", 
+        "time": "2018-12-26 11:17:56.047984"
+    }, 
+    {
+        "keys": [
+            "ovid", 
+            "love", 
+            "brave", 
+            "fortune", 
+            "favor"
+        ], 
+        "text": "Fortune and love favor the brave. Ovid\n", 
+        "time": "2018-12-26 11:17:56.048001"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "james", 
+            "humility", 
+            "long", 
+            "barrie", 
+            "lesson"
+        ], 
+        "text": "Life is a long lesson in humility. James M. Barrie\n", 
+        "time": "2018-12-26 11:17:56.048019"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "march", 
+            "dance", 
+            "better", 
+            "through", 
+            "than", 
+            "yoko"
+        ], 
+        "text": "It\u2019s better to dance than to march through life. Yoko Ono\n", 
+        "time": "2018-12-26 11:17:56.048039"
+    }, 
+    {
+        "keys": [
+            "goblin", 
+            "green", 
+            "choose"
+        ], 
+        "text": "We are who we choose to be. Green Goblin\n", 
+        "time": "2018-12-26 11:17:56.048055"
+    }, 
+    {
+        "keys": [
+            "them", 
+            "doing", 
+            "always", 
+            "tweet", 
+            "pablo", 
+            "cant", 
+            "things", 
+            "picasso", 
+            "click", 
+            "thats"
+        ], 
+        "text": "I\u2019m always doing things I can\u2019t do. That\u2019s how I get to do them. Pablo Picasso Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.048082"
+    }, 
+    {
+        "keys": [
+            "sarah", 
+            "life", 
+            "short", 
+            "louise", 
+            "sweet", 
+            "make", 
+            "delany"
+        ], 
+        "text": "Life is short, and it is up to you to make it sweet. Sarah Louise Delany\n", 
+        "time": "2018-12-26 11:17:56.048106"
+    }, 
+    {
+        "keys": [
+            "what", 
+            "short", 
+            "dont", 
+            "that", 
+            "savor", 
+            "things", 
+            "time", 
+            "when", 
+            "life", 
+            "relentlessly", 
+            "matter", 
+            "have", 
+            "prune", 
+            "paul", 
+            "thats", 
+            "graham", 
+            "bullshit", 
+            "wait"
+        ], 
+        "text": "Relentlessly prune bullshit, don\u2019t wait to do things that matter, and savor the time you have. That\u2019s what you do when life is short. Paul Graham\n", 
+        "time": "2018-12-26 11:17:56.048141"
+    }, 
+    {
+        "keys": [
+            "woman", 
+            "places", 
+            "crowd", 
+            "follows", 
+            "einstein", 
+            "albert", 
+            "been", 
+            "find", 
+            "will", 
+            "alone", 
+            "likely", 
+            "walks", 
+            "usually", 
+            "further", 
+            "herself", 
+            "than", 
+            "before"
+        ], 
+        "text": "The woman who follows the crowd will usually go no further than the crowd. The woman who walks alone is likely to find herself in places no one has been before. Albert Einstein\n", 
+        "time": "2018-12-26 11:17:56.048184"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "indira", 
+            "gandhi", 
+            "purpose", 
+            "believe", 
+            "hope", 
+            "strive"
+        ], 
+        "text": "The purpose of life is to believe, to hope, and to strive. Indira Gandhi\n", 
+        "time": "2018-12-26 11:17:56.048209"
+    }, 
+    {
+        "keys": [
+            "stone", 
+            "many", 
+            "create", 
+            "teresa", 
+            "ripples", 
+            "water", 
+            "cast", 
+            "cannot", 
+            "mother", 
+            "alone", 
+            "world", 
+            "across", 
+            "change"
+        ], 
+        "text": "I alone cannot change the world, but I can cast a stone across the water to create many ripples. Mother Teresa\n", 
+        "time": "2018-12-26 11:17:56.048238"
+    }, 
+    {
+        "keys": [
+            "what", 
+            "neil", 
+            "want", 
+            "that", 
+            "sacrifice", 
+            "life", 
+            "strauss", 
+            "tomorrow", 
+            "willing", 
+            "have", 
+            "think", 
+            "today"
+        ], 
+        "text": "Be willing to sacrifice what you think you have today for the life that you want tomorrow. Neil Strauss\n", 
+        "time": "2018-12-26 11:17:56.048267"
+    }, 
+    {
+        "keys": [
+            "begin", 
+            "never", 
+            "robbins", 
+            "anthony", 
+            "only", 
+            "journey", 
+            "impossible"
+        ], 
+        "text": "The only impossible journey is the one you never begin. Anthony Robbins\n", 
+        "time": "2018-12-26 11:17:56.048289"
+    }, 
+    {
+        "keys": [
+            "play", 
+            "story", 
+            "only", 
+            "neil", 
+            "that", 
+            "dance", 
+            "nobody", 
+            "mind", 
+            "draw", 
+            "else", 
+            "write", 
+            "thing", 
+            "live", 
+            "build", 
+            "have", 
+            "voice", 
+            "your", 
+            "vision", 
+            "gaiman"
+        ], 
+        "text": "The one thing that you have that nobody else has is you. Your voice, your mind, your story, your vision. So write and draw and build and play and dance and live as only you can. Neil Gaiman\n", 
+        "time": "2018-12-26 11:17:56.048335"
+    }, 
+    {
+        "keys": [
+            "angelou", 
+            "life", 
+            "humor", 
+            "compassion", 
+            "merely", 
+            "some", 
+            "mission", 
+            "maya", 
+            "style", 
+            "passion", 
+            "survive", 
+            "with", 
+            "thrive"
+        ], 
+        "text": "My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style. Maya Angelou\n", 
+        "time": "2018-12-26 11:17:56.048373"
+    }, 
+    {
+        "keys": [
+            "imagining", 
+            "from", 
+            "doing", 
+            "leap", 
+            "sher", 
+            "quantum", 
+            "barbara"
+        ], 
+        "text": "Doing is a quantum leap from imagining. Barbara Sher\n", 
+        "time": "2018-12-26 11:17:56.048392"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "unless", 
+            "least", 
+            "will", 
+            "meaning", 
+            "ones", 
+            "lives", 
+            "gauguin", 
+            "limit", 
+            "paul", 
+            "with"
+        ], 
+        "text": "Life has no meaning unless one lives it with a will, at least to the limit of one\u2019s will. Paul Gauguin\n", 
+        "time": "2018-12-26 11:17:56.048421"
+    }, 
+    {
+        "keys": [
+            "steve", 
+            "good", 
+            "tweet", 
+            "ignore", 
+            "cant", 
+            "they", 
+            "martin", 
+            "click"
+        ], 
+        "text": "Be so good they can\u2019t ignore you. Steve Martin Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.048444"
+    }, 
+    {
+        "keys": [
+            "about", 
+            "dont", 
+            "engelbreit", 
+            "mary", 
+            "cant", 
+            "something", 
+            "think", 
+            "change", 
+            "like"
+        ], 
+        "text": "If you don\u2019t like something change it; if you can\u2019t change it, change the way you think about it. Mary Engelbreit\n", 
+        "time": "2018-12-26 11:17:56.048475"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "that", 
+            "generation", 
+            "james", 
+            "william", 
+            "being", 
+            "attitude", 
+            "greatest", 
+            "human", 
+            "altering", 
+            "alter", 
+            "discovery"
+        ], 
+        "text": "The greatest discovery of any generation is that a human being can alter his life by altering his attitude. William James\n", 
+        "time": "2018-12-26 11:17:56.048506"
+    }, 
+    {
+        "keys": [
+            "them", 
+            "pursue", 
+            "come", 
+            "walt", 
+            "courage", 
+            "disney", 
+            "have", 
+            "true", 
+            "dreams"
+        ], 
+        "text": "All our dreams can come true if we have the courage to pursue them. Walt Disney\n", 
+        "time": "2018-12-26 11:17:56.048531"
+    }, 
+    {
+        "keys": [
+            "gutter", 
+            "oscar", 
+            "some", 
+            "looking", 
+            "wilde", 
+            "stars"
+        ], 
+        "text": "We are all in the gutter, but some of us are looking at the stars. Oscar Wilde\n", 
+        "time": "2018-12-26 11:17:56.048556"
+    }, 
+    {
+        "keys": [
+            "cant", 
+            "right", 
+            "ford", 
+            "either", 
+            "henry"
+        ], 
+        "text": "If you say you can or you can\u2019t you are right either way. Henry Ford\n", 
+        "time": "2018-12-26 11:17:56.048580"
+    }, 
+    {
+        "keys": [
+            "force", 
+            "perpetual", 
+            "optimism", 
+            "colin", 
+            "multiplier", 
+            "powell"
+        ], 
+        "text": "Perpetual optimism is a force multiplier. Colin Powell\n", 
+        "time": "2018-12-26 11:17:56.048600"
+    }, 
+    {
+        "keys": [
+            "them", 
+            "said", 
+            "that", 
+            "doing", 
+            "albert", 
+            "myself", 
+            "thankful", 
+            "because", 
+            "einstein"
+        ], 
+        "text": "I am thankful to all who said no to me. It is because of them that I\u2019m doing it myself. Albert Einstein\n", 
+        "time": "2018-12-26 11:17:56.048629"
+    }, 
+    {
+        "keys": [
+            "saviors", 
+            "james", 
+            "tweet", 
+            "dreamers", 
+            "world", 
+            "allen", 
+            "click"
+        ], 
+        "text": "The dreamers are the saviors of the world. James Allen Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.048651"
+    }, 
+    {
+        "keys": [
+            "everything", 
+            "confucius", 
+            "everyone", 
+            "beauty"
+        ], 
+        "text": "Everything has its beauty, but not everyone see its. Confucius\n", 
+        "time": "2018-12-26 11:17:56.048672"
+    }, 
+    {
+        "keys": [
+            "enjoy", 
+            "great", 
+            "epictetus", 
+            "festival", 
+            "life", 
+            "other", 
+            "with"
+        ], 
+        "text": "Try to enjoy the great festival of life with other men! Epictetus\n", 
+        "time": "2018-12-26 11:17:56.048694"
+    }, 
+    {
+        "keys": [
+            "summer", 
+            "there", 
+            "winter", 
+            "camus", 
+            "invincible", 
+            "within", 
+            "albert", 
+            "found", 
+            "midst"
+        ], 
+        "text": "In the midst of winter, I found there was within me an invincible summer. Albert Camus\n", 
+        "time": "2018-12-26 11:17:56.048718"
+    }, 
+    {
+        "keys": [
+            "breathe", 
+            "enjoy", 
+            "what", 
+            "love", 
+            "marcus", 
+            "when", 
+            "alive", 
+            "morning", 
+            "aurelius", 
+            "arise", 
+            "privilege", 
+            "precious", 
+            "think"
+        ], 
+        "text": "When you arise in the morning think of what a precious privilege it is to be alive, to breathe, to think, to enjoy, to love. Marcus Aurelius\n", 
+        "time": "2018-12-26 11:17:56.048755"
+    }, 
+    {
+        "keys": [
+            "beautiful", 
+            "life", 
+            "because", 
+            "nhat", 
+            "make", 
+            "hanh", 
+            "thich", 
+            "smile", 
+            "your", 
+            "more"
+        ], 
+        "text": "Because of your smile, you make life more beautiful. Thich Nhat Hanh\n", 
+        "time": "2018-12-26 11:17:56.048778"
+    }, 
+    {
+        "keys": [
+            "revealing", 
+            "coelho", 
+            "life", 
+            "waits", 
+            "brilliant", 
+            "always", 
+            "some", 
+            "eleven", 
+            "crisis", 
+            "paulo", 
+            "most", 
+            "itself", 
+            "minutes", 
+            "occur", 
+            "before"
+        ], 
+        "text": "Life always waits for some crisis to occur before revealing itself at its most brilliant. Paulo Coelho (Eleven Minutes)\n", 
+        "time": "2018-12-26 11:17:56.048807"
+    }, 
+    {
+        "keys": [
+            "divinely", 
+            "life", 
+            "means", 
+            "miller", 
+            "aware", 
+            "serenely", 
+            "live", 
+            "henry", 
+            "drunkenly", 
+            "joyously"
+        ], 
+        "text": "The aim of life is to live, and to live means to be aware, joyously, drunkenly, serenely, divinely aware. Henry Miller\n", 
+        "time": "2018-12-26 11:17:56.048839"
+    }, 
+    {
+        "keys": [
+            "naval", 
+            "ravikant", 
+            "that", 
+            "this", 
+            "youre", 
+            "planet", 
+            "very", 
+            "second", 
+            "every", 
+            "have", 
+            "responsibility", 
+            "precious", 
+            "your", 
+            "happy"
+        ], 
+        "text": "Every second you have on this planet is very precious and it\u2019s your responsibility that you\u2019re happy. Naval Ravikant\n", 
+        "time": "2018-12-26 11:17:56.048869"
+    }, 
+    {
+        "keys": [
+            "benjamin", 
+            "like", 
+            "disraeli", 
+            "there", 
+            "education", 
+            "adversity"
+        ], 
+        "text": "There is no education like adversity. Benjamin Disraeli\n", 
+        "time": "2018-12-26 11:17:56.048889"
+    }, 
+    {
+        "keys": [
+            "long", 
+            "david", 
+            "will", 
+            "anywhere", 
+            "livingston", 
+            "forward"
+        ], 
+        "text": "I will go anywhere as long as it\u2019s forward. David Livingston\n", 
+        "time": "2018-12-26 11:17:56.048909"
+    }, 
+    {
+        "keys": [
+            "short", 
+            "dont", 
+            "hagen", 
+            "flowers", 
+            "youre", 
+            "visit", 
+            "here", 
+            "only", 
+            "sure", 
+            "along", 
+            "hurry", 
+            "smell", 
+            "worry", 
+            "walter"
+        ], 
+        "text": "You\u2019re only here for a short visit. Don\u2019t hurry, don\u2019t worry. And be sure to smell the flowers along the way. Walter Hagen\n", 
+        "time": "2018-12-26 11:17:56.048942"
+    }, 
+    {
+        "keys": [
+            "living", 
+            "life", 
+            "dickinson", 
+            "mere", 
+            "ecstasy", 
+            "enough", 
+            "sense", 
+            "find", 
+            "emily"
+        ], 
+        "text": "Find ecstasy in life; the mere sense of living is joy enough. Emily Dickinson\n", 
+        "time": "2018-12-26 11:17:56.048968"
+    }, 
+    {
+        "keys": [
+            "claim", 
+            "life", 
+            "clinton", 
+            "just", 
+            "hillary", 
+            "live", 
+            "have", 
+            "with", 
+            "yours", 
+            "best"
+        ], 
+        "text": "You have just one life to live. It is yours. Own it, claim it, live it, do the best you can with it. Hillary Clinton\n", 
+        "time": "2018-12-26 11:17:56.049000"
+    }, 
+    {
+        "keys": [
+            "great", 
+            "success", 
+            "their", 
+            "people", 
+            "most", 
+            "step", 
+            "napoleon", 
+            "greatest", 
+            "have", 
+            "attained", 
+            "beyond", 
+            "failure", 
+            "hill"
+        ], 
+        "text": "Most great people have attained their greatest success one step beyond their greatest failure. Napoleon Hill\n", 
+        "time": "2018-12-26 11:17:56.049028"
+    }, 
+    {
+        "keys": [
+            "lies", 
+            "albert", 
+            "middle", 
+            "einstein", 
+            "difficulty", 
+            "opportunity"
+        ], 
+        "text": "In the middle of a difficulty lies opportunity. Albert Einstein\n", 
+        "time": "2018-12-26 11:17:56.049049"
+    }, 
+    {
+        "keys": [
+            "brown", 
+            "life", 
+            "jackson", 
+            "that", 
+            "require", 
+            "only", 
+            "doesnt", 
+            "best"
+        ], 
+        "text": "Life doesn\u2019t require that we be the best, only that we try our best. H. Jackson Brown Jr.\n", 
+        "time": "2018-12-26 11:17:56.049077"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "days", 
+            "live", 
+            "jonathan", 
+            "swift", 
+            "your"
+        ], 
+        "text": "May you live all the days of your life. Jonathan Swift\n", 
+        "time": "2018-12-26 11:17:56.049096"
+    }, 
+    {
+        "keys": [
+            "absence", 
+            "striving", 
+            "zhuangzi", 
+            "happiness"
+        ], 
+        "text": "Happiness is the absence of the striving for happiness. Zhuangzi\n", 
+        "time": "2018-12-26 11:17:56.049116"
+    }, 
+    {
+        "keys": [
+            "signal", 
+            "onward", 
+            "keller", 
+            "simply", 
+            "helen", 
+            "press", 
+            "defeat"
+        ], 
+        "text": "Defeat is simply a signal to press onward. Helen Keller\n", 
+        "time": "2018-12-26 11:17:56.049135"
+    }, 
+    {
+        "keys": [
+            "again", 
+            "life", 
+            "that", 
+            "over", 
+            "michael", 
+            "failed", 
+            "succeed", 
+            "jordan"
+        ], 
+        "text": "I\u2019ve failed over and over and over again in my life. And that is why I succeed. Michael Jordan\n", 
+        "time": "2018-12-26 11:17:56.049162"
+    }, 
+    {
+        "keys": [
+            "that", 
+            "smith", 
+            "will", 
+            "step", 
+            "have", 
+            "first"
+        ], 
+        "text": "The first step is you have to say that you can. Will Smith\n", 
+        "time": "2018-12-26 11:17:56.049183"
+    }, 
+    {
+        "keys": [
+            "surest", 
+            "stones", 
+            "dale", 
+            "success", 
+            "carnegie", 
+            "failure", 
+            "stepping", 
+            "discouragement"
+        ], 
+        "text": "Discouragement and failure are two of the surest stepping stones to success. Dale Carnegie\n", 
+        "time": "2018-12-26 11:17:56.049207"
+    }, 
+    {
+        "keys": [
+            "dalai", 
+            "lama", 
+            "lives", 
+            "purpose", 
+            "happy"
+        ], 
+        "text": "The purpose of our lives is to be happy. Dalai Lama\n", 
+        "time": "2018-12-26 11:17:56.049240"
+    }, 
+    {
+        "keys": [
+            "reeve", 
+            "possible", 
+            "anythings", 
+            "christopher", 
+            "choose", 
+            "hope", 
+            "once"
+        ], 
+        "text": "Once you choose hope, anything\u2019s possible. Christopher Reeve\n", 
+        "time": "2018-12-26 11:17:56.049261"
+    }, 
+    {
+        "keys": [
+            "beautiful", 
+            "life", 
+            "because", 
+            "about", 
+            "keep", 
+            "thing", 
+            "much", 
+            "smile", 
+            "smiling", 
+            "marilyn", 
+            "monroe", 
+            "theres"
+        ], 
+        "text": "Keep smiling, because life is a beautiful thing and there\u2019s so much to smile about. Marilyn Monroe\n", 
+        "time": "2018-12-26 11:17:56.049287"
+    }, 
+    {
+        "keys": [
+            "loved", 
+            "life", 
+            "love", 
+            "there", 
+            "sand", 
+            "only", 
+            "george", 
+            "happiness"
+        ], 
+        "text": "There is only one happiness in life \u2013 to love and to be loved. George Sand\n", 
+        "time": "2018-12-26 11:17:56.049312"
+    }, 
+    {
+        "keys": [
+            "rise", 
+            "above", 
+            "sunshine", 
+            "will", 
+            "mario", 
+            "storm", 
+            "find", 
+            "fernandez"
+        ], 
+        "text": "Rise above the storm and you will find the sunshine. Mario Fernandez\n", 
+        "time": "2018-12-26 11:17:56.049334"
+    }, 
+    {
+        "keys": [
+            "success", 
+            "that", 
+            "capote", 
+            "failure", 
+            "flavor", 
+            "truman", 
+            "condiment", 
+            "gives"
+        ], 
+        "text": "Failure is the condiment that gives success its flavor. Truman Capote\n", 
+        "time": "2018-12-26 11:17:56.049355"
+    }, 
+    {
+        "keys": [
+            "mountains", 
+            "seuss", 
+            "mountain", 
+            "move", 
+            "waiting", 
+            "youll", 
+            "your", 
+            "today"
+        ], 
+        "text": "Kid, you\u2019ll move mountains! Today is your day! Your mountain is waiting, so get on your way! Dr. Seuss\n", 
+        "time": "2018-12-26 11:17:56.049383"
+    }, 
+    {
+        "keys": [
+            "crazy", 
+            "charles", 
+            "lead", 
+            "people", 
+            "tweet", 
+            "never", 
+            "some", 
+            "what", 
+            "truly", 
+            "lives", 
+            "they", 
+            "horrible", 
+            "bukowski", 
+            "click", 
+            "must"
+        ], 
+        "text": "Some people never go crazy. What truly horrible lives they must lead. Charles Bukowski Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.049412"
+    }, 
+    {
+        "keys": [
+            "raise", 
+            "hand", 
+            "vonnegut", 
+            "telekinetics", 
+            "kurt", 
+            "believe", 
+            "those"
+        ], 
+        "text": "Those who believe in telekinetics, raise my hand. Kurt Vonnegut\n", 
+        "time": "2018-12-26 11:17:56.049436"
+    }, 
+    {
+        "keys": [
+            "about", 
+            "sure", 
+            "things", 
+            "einstein", 
+            "albert", 
+            "stupidity", 
+            "human", 
+            "universe", 
+            "infinite"
+        ], 
+        "text": "Two things are infinite: the universe and human stupidity; and I\u2019m not sure about the universe. Albert Einstein\n", 
+        "time": "2018-12-26 11:17:56.049465"
+    }, 
+    {
+        "keys": [
+            "then", 
+            "little", 
+            "love", 
+            "charles", 
+            "chocolate", 
+            "doesnt", 
+            "schulz", 
+            "need", 
+            "hurt"
+        ], 
+        "text": "All you need is love. But a little chocolate now and then doesn\u2019t hurt. Charles Schulz\n", 
+        "time": "2018-12-26 11:17:56.049490"
+    }, 
+    {
+        "keys": [
+            "degeneres", 
+            "killer", 
+            "unless", 
+            "youre", 
+            "accept", 
+            "ellen", 
+            "serial"
+        ], 
+        "text": "Accept who you are. Unless you\u2019re a serial killer. Ellen DeGeneres\n", 
+        "time": "2018-12-26 11:17:56.049512"
+    }, 
+    {
+        "keys": [
+            "false", 
+            "this", 
+            "mark", 
+            "twain", 
+            "including", 
+            "generalizations"
+        ], 
+        "text": "All generalizations are false, including this one. Mark Twain\n", 
+        "time": "2018-12-26 11:17:56.049531"
+    }, 
+    {
+        "keys": [
+            "count", 
+            "twain", 
+            "very", 
+            "angry", 
+            "when", 
+            "mark", 
+            "four", 
+            "swear"
+        ], 
+        "text": "When angry, count to four; when very angry, swear. Mark Twain\n", 
+        "time": "2018-12-26 11:17:56.049552"
+    }, 
+    {
+        "keys": [
+            "guisewite", 
+            "life", 
+            "someone", 
+            "when", 
+            "lemons", 
+            "cathy", 
+            "squirt", 
+            "gives"
+        ], 
+        "text": "When life gives you lemons, squirt someone in the eye. Cathy Guisewite\n", 
+        "time": "2018-12-26 11:17:56.049573"
+    }, 
+    {
+        "keys": [
+            "william", 
+            "life", 
+            "selling", 
+            "says", 
+            "goldman", 
+            "anyone", 
+            "something", 
+            "pain", 
+            "otherwise"
+        ], 
+        "text": "Life is pain. Anyone who says otherwise is selling something. William Goldman\n", 
+        "time": "2018-12-26 11:17:56.049594"
+    }, 
+    {
+        "keys": [
+            "cleaner", 
+            "mans", 
+            "often", 
+            "womans", 
+            "herford", 
+            "mind", 
+            "oliver", 
+            "changes", 
+            "than", 
+            "more"
+        ], 
+        "text": "A woman\u2019s mind is cleaner than a man\u2019s: She changes it more often. Oliver Herford\n", 
+        "time": "2018-12-26 11:17:56.049619"
+    }, 
+    {
+        "keys": [
+            "temptation", 
+            "oscar", 
+            "except", 
+            "resist", 
+            "everything", 
+            "wilde"
+        ], 
+        "text": "I can resist everything except temptation. Oscar Wilde\n", 
+        "time": "2018-12-26 11:17:56.049637"
+    }, 
+    {
+        "keys": [
+            "people", 
+            "tweet", 
+            "click", 
+            "planet", 
+            "carlin", 
+            "fucked", 
+            "fine", 
+            "george"
+        ], 
+        "text": "The planet is fine. The people are fucked. George Carlin Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.049659"
+    }, 
+    {
+        "keys": [
+            "whose", 
+            "myself", 
+            "because", 
+            "only", 
+            "answers", 
+            "reason", 
+            "accept", 
+            "george", 
+            "talk", 
+            "carlin"
+        ], 
+        "text": "The reason I talk to myself is because I\u2019m the only one whose answers I accept. George Carlin\n", 
+        "time": "2018-12-26 11:17:56.049686"
+    }, 
+    {
+        "keys": [
+            "sound", 
+            "love", 
+            "like", 
+            "make", 
+            "deadlines", 
+            "whooshing", 
+            "douglas", 
+            "they", 
+            "adams"
+        ], 
+        "text": "I love deadlines, I like the whooshing sound they make as they fly by. Douglas Adams\n", 
+        "time": "2018-12-26 11:17:56.049713"
+    }, 
+    {
+        "keys": [
+            "constantly", 
+            "people", 
+            "very", 
+            "never", 
+            "theyre", 
+            "bright", 
+            "selling", 
+            "hamilton", 
+            "either", 
+            "laurell", 
+            "smile", 
+            "trust", 
+            "something"
+        ], 
+        "text": "Never trust people who smile constantly. They\u2019re either selling something or not very bright. Laurell K. Hamilton\n", 
+        "time": "2018-12-26 11:17:56.049743"
+    }, 
+    {
+        "keys": [
+            "used", 
+            "heinlein", 
+            "relax", 
+            "robert", 
+            "please", 
+            "idea", 
+            "should", 
+            "will", 
+            "cats", 
+            "they", 
+            "dogs", 
+            "women"
+        ], 
+        "text": "Women and cats will do as they please, and men and dogs should relax and get used to the idea. Robert A Heinlein\n", 
+        "time": "2018-12-26 11:17:56.049775"
+    }, 
+    {
+        "keys": [
+            "lawrence", 
+            "brains", 
+            "youre", 
+            "will", 
+            "openminded", 
+            "fall", 
+            "ferlinghetti", 
+            "your"
+        ], 
+        "text": "If you\u2019re too open-minded; your brains will fall out. Lawrence Ferlinghetti\n", 
+        "time": "2018-12-26 11:17:56.049797"
+    }, 
+    {
+        "keys": [
+            "great", 
+            "woman", 
+            "eyes", 
+            "behind", 
+            "every", 
+            "rolling", 
+            "carrey"
+        ], 
+        "text": "Behind every great man is a woman rolling her eyes. Jim Carrey\n", 
+        "time": "2018-12-26 11:17:56.049819"
+    }, 
+    {
+        "keys": [
+            "what", 
+            "wife", 
+            "about", 
+            "butcher", 
+            "bees", 
+            "dangerfield", 
+            "rodney", 
+            "birds", 
+            "told"
+        ], 
+        "text": "What a kid I got, I told him about the birds and the bees and he told me about the butcher and my wife. Rodney Dangerfield\n", 
+        "time": "2018-12-26 11:17:56.049851"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "short", 
+            "would", 
+            "song", 
+            "rather", 
+            "thousand", 
+            "click", 
+            "tweet", 
+            "london", 
+            "jack", 
+            "sing", 
+            "than", 
+            "interpret"
+        ], 
+        "text": "Life is so short. I would rather sing one song than interpret the thousand. Jack London Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.049880"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "made", 
+            "many", 
+            "charles", 
+            "welded", 
+            "together", 
+            "partings", 
+            "dickens", 
+            "ever"
+        ], 
+        "text": "Life is made of ever so many partings welded together. Charles Dickens\n", 
+        "time": "2018-12-26 11:17:56.049901"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "this", 
+            "ending", 
+            "durden", 
+            "club", 
+            "tyler", 
+            "time", 
+            "fight", 
+            "your", 
+            "minute"
+        ], 
+        "text": "This is your life and it\u2019s ending one minute at a time. Tyler Durden (Fight Club)\n", 
+        "time": "2018-12-26 11:17:56.049929"
+    }, 
+    {
+        "keys": [
+            "schopenhauer", 
+            "less", 
+            "seems", 
+            "unintelligent", 
+            "arthur", 
+            "mysterious", 
+            "existence", 
+            "more"
+        ], 
+        "text": "The more unintelligent a man is, the less mysterious existence seems to him. Arthur Schopenhauer\n", 
+        "time": "2018-12-26 11:17:56.049954"
+    }, 
+    {
+        "keys": [
+            "schopenhauer", 
+            "life", 
+            "often", 
+            "about", 
+            "thing", 
+            "arthur", 
+            "lamented", 
+            "shortness", 
+            "best"
+        ], 
+        "text": "The shortness of life, so often lamented, may be the best thing about it. Arthur Schopenhauer\n", 
+        "time": "2018-12-26 11:17:56.049980"
+    }, 
+    {
+        "keys": [
+            "brown", 
+            "life", 
+            "charlie", 
+            "back", 
+            "answers", 
+            "book", 
+            "arent"
+        ], 
+        "text": "In the book of life, the answers aren\u2019t in the back. Charlie Brown\n", 
+        "time": "2018-12-26 11:17:56.050003"
+    }, 
+    {
+        "keys": [
+            "firm", 
+            "drucker", 
+            "predict", 
+            "nobody", 
+            "idea", 
+            "future", 
+            "have", 
+            "grasp", 
+            "peter", 
+            "present"
+        ], 
+        "text": "Nobody can predict the future; the idea is to have a firm grasp of the present. Peter F. Drucker\n", 
+        "time": "2018-12-26 11:17:56.050030"
+    }, 
+    {
+        "keys": [
+            "devoted", 
+            "letting", 
+            "life", 
+            "inward", 
+            "healthy", 
+            "forming", 
+            "jung", 
+            "second", 
+            "going", 
+            "carl", 
+            "half", 
+            "first"
+        ], 
+        "text": "The first half of life is devoted to forming a healthy ego, the second half is going inward and letting go of it. Carl Jung\n", 
+        "time": "2018-12-26 11:17:56.050063"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "longer", 
+            "money", 
+            "vicki", 
+            "your", 
+            "live", 
+            "robin", 
+            "consume"
+        ], 
+        "text": "We no longer live life. We consume it. Vicki Robin (Your Money Or Your Life)\n", 
+        "time": "2018-12-26 11:17:56.050089"
+    }, 
+    {
+        "keys": [
+            "what", 
+            "dont", 
+            "seeking", 
+            "being", 
+            "that", 
+            "people", 
+            "life", 
+            "experience", 
+            "meaning", 
+            "joseph", 
+            "alive", 
+            "were", 
+            "campbell", 
+            "really", 
+            "think", 
+            "thats"
+        ], 
+        "text": "People say that what we\u2019re all seeking is a meaning for life. I don\u2019t think that\u2019s what we\u2019re really seeking. I think that what we\u2019re seeking is an experience of being alive. Joseph Campbell\n", 
+        "time": "2018-12-26 11:17:56.050139"
+    }, 
+    {
+        "keys": [
+            "forget", 
+            "unknown", 
+            "forgive", 
+            "bravest", 
+            "strongest", 
+            "apologize", 
+            "happiest", 
+            "first"
+        ], 
+        "text": "The first to apologize is the bravest. The first to forgive is the strongest. The first to forget is the happiest. Unknown\n", 
+        "time": "2018-12-26 11:17:56.050172"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "derive", 
+            "from", 
+            "dont", 
+            "that", 
+            "purpose", 
+            "unknown", 
+            "waters", 
+            "sail", 
+            "will", 
+            "unceasingly", 
+            "raging", 
+            "calm", 
+            "storm", 
+            "learn", 
+            "test", 
+            "arrive", 
+            "resilience", 
+            "wait"
+        ], 
+        "text": "Life is a storm that will test you unceasingly. Don\u2019t wait for calm waters that may not arrive. Derive purpose from resilience. Learn to sail the raging sea. Unknown\n", 
+        "time": "2018-12-26 11:17:56.050213"
+    }, 
+    {
+        "keys": [
+            "loss", 
+            "life", 
+            "death", 
+            "norman", 
+            "dies", 
+            "inside", 
+            "live", 
+            "what", 
+            "while", 
+            "greatest", 
+            "cousins"
+        ], 
+        "text": "Death is not the greatest loss in life. The greatest loss is what dies inside us while we live. Norman Cousins\n", 
+        "time": "2018-12-26 11:17:56.050245"
+    }, 
+    {
+        "keys": [
+            "seuss", 
+            "simple", 
+            "sometimes", 
+            "answers", 
+            "complicated", 
+            "questions"
+        ], 
+        "text": "Sometimes the questions are complicated and the answers are simple. Dr. Seuss\n", 
+        "time": "2018-12-26 11:17:56.050268"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "anything", 
+            "myself", 
+            "live", 
+            "going", 
+            "rick", 
+            "have", 
+            "riordan", 
+            "mean"
+        ], 
+        "text": "If my life is going to mean anything, I have to live it myself. Rick Riordan\n", 
+        "time": "2018-12-26 11:17:56.050292"
+    }, 
+    {
+        "keys": [
+            "gottlier", 
+            "easy", 
+            "want", 
+            "hard", 
+            "when", 
+            "have", 
+            "annie"
+        ], 
+        "text": "It\u2019s so hard when I have to, and so easy when I want to. Annie Gottlier\n", 
+        "time": "2018-12-26 11:17:56.050316"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "full", 
+            "dont", 
+            "manson", 
+            "series", 
+            "merely", 
+            "creation", 
+            "problems", 
+            "essentially", 
+            "solution", 
+            "thing", 
+            "good", 
+            "without", 
+            "instead", 
+            "mark", 
+            "such", 
+            "problem", 
+            "next", 
+            "theres", 
+            "hope", 
+            "endless"
+        ], 
+        "text": "Life is essentially an endless series of problems. The solution to one problem is merely the creation of the next one. Don\u2019t hope for a life without problems. There\u2019s no such thing. Instead, hope for a life full of good problems. Mark Manson\n", 
+        "time": "2018-12-26 11:17:56.050370"
+    }, 
+    {
+        "keys": [
+            "william", 
+            "great", 
+            "born", 
+            "there", 
+            "life", 
+            "days", 
+            "discover", 
+            "persons", 
+            "barclay"
+        ], 
+        "text": "There are two great days in a person\u2019s life \u2013 the day we are born and the day we discover why. William Barclay\n", 
+        "time": "2018-12-26 11:17:56.050403"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "already", 
+            "anything", 
+            "marston", 
+            "ralph", 
+            "given", 
+            "everything", 
+            "does", 
+            "because"
+        ], 
+        "text": "Life does not owe you anything because life has already given you everything. Ralph Marston\n", 
+        "time": "2018-12-26 11:17:56.050429"
+    }, 
+    {
+        "keys": [
+            "startling", 
+            "little", 
+            "room", 
+            "occupations", 
+            "leaves", 
+            "live", 
+            "other", 
+            "dickson", 
+            "emily"
+        ], 
+        "text": "To live is so startling, it leaves but little room for other occupations. Emily Dickson\n", 
+        "time": "2018-12-26 11:17:56.050454"
+    }, 
+    {
+        "keys": [
+            "marley", 
+            "tweet", 
+            "stop", 
+            "race", 
+            "racing", 
+            "click"
+        ], 
+        "text": "The day you stop racing, is the day you win the race. Bob Marley Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.050479"
+    }, 
+    {
+        "keys": [
+            "what", 
+            "winking", 
+            "maybe", 
+            "life", 
+            "wink", 
+            "jack", 
+            "stars", 
+            "kerouac", 
+            "thats"
+        ], 
+        "text": "Maybe that\u2019s what life is\u2026 a wink of the eye and winking stars. Jack Kerouac\n", 
+        "time": "2018-12-26 11:17:56.050503"
+    }, 
+    {
+        "keys": [
+            "thomas", 
+            "wise", 
+            "forget", 
+            "forgive", 
+            "stupid", 
+            "nave", 
+            "neither", 
+            "szasz"
+        ], 
+        "text": "The stupid neither forgive nor forget; the na\u00efve forgive and forget; the wise forgive but do not forget. Thomas Szasz\n", 
+        "time": "2018-12-26 11:17:56.050535"
+    }, 
+    {
+        "keys": [
+            "desire", 
+            "chaplin", 
+            "what", 
+            "charlie", 
+            "life", 
+            "meaning", 
+            "want"
+        ], 
+        "text": "What do you want a meaning for? Life is a desire, not a meaning. Charlie Chaplin\n", 
+        "time": "2018-12-26 11:17:56.050561"
+    }, 
+    {
+        "keys": [
+            "lifes", 
+            "tweet", 
+            "click", 
+            "engelbreit", 
+            "mysterious", 
+            "serious", 
+            "mary", 
+            "take"
+        ], 
+        "text": "Life\u2019s too mysterious to take too serious. Mary Engelbreit Click to tweet\n", 
+        "time": "2018-12-26 11:17:56.050584"
+    }, 
+    {
+        "keys": [
+            "dont", 
+            "ravikant", 
+            "that", 
+            "much", 
+            "long", 
+            "yourself", 
+            "matter", 
+            "seriously", 
+            "going", 
+            "take", 
+            "nothing", 
+            "naval"
+        ], 
+        "text": "Nothing you do is going to matter that much in the long run. Don\u2019t take yourself so seriously. Naval Ravikant\n", 
+        "time": "2018-12-26 11:17:56.050613"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "anything", 
+            "frank", 
+            "scared", 
+            "never", 
+            "anyone", 
+            "sinatra", 
+            "baby", 
+            "lesson"
+        ], 
+        "text": "The big lesson in life, baby, is never be scared of anyone or anything. Frank Sinatra\n", 
+        "time": "2018-12-26 11:17:56.050638"
+    }, 
+    {
+        "keys": [
+            "angelou", 
+            "because", 
+            "maya", 
+            "consistently", 
+            "practice", 
+            "virtues", 
+            "without", 
+            "most", 
+            "cant", 
+            "courage", 
+            "virtue", 
+            "other", 
+            "important"
+        ], 
+        "text": "Courage is the most important of all the virtues because without courage, you can\u2019t practice any other virtue consistently. Maya Angelou\n", 
+        "time": "2018-12-26 11:17:56.050672"
+    }, 
+    {
+        "keys": [
+            "enjoy", 
+            "little", 
+            "errors", 
+            "that", 
+            "avoid", 
+            "life", 
+            "foolishness", 
+            "wisdom", 
+            "will", 
+            "enough", 
+            "osho"
+        ], 
+        "text": "A little foolishness, enough to enjoy life, and a little wisdom to avoid the errors, that will do. Osho\n", 
+        "time": "2018-12-26 11:17:56.050705"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "that", 
+            "many", 
+            "danger", 
+            "chief", 
+            "take", 
+            "alfred", 
+            "precautions", 
+            "adler"
+        ], 
+        "text": "The chief danger in life is that you may take too many precautions. Alfred Adler\n", 
+        "time": "2018-12-26 11:17:56.050730"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "when", 
+            "krizzan", 
+            "observe", 
+            "something", 
+            "hurts", 
+            "teach", 
+            "trying", 
+            "anita"
+        ], 
+        "text": "When it hurts \u2013 observe. Life is trying to teach you something. Anita Krizzan\n", 
+        "time": "2018-12-26 11:17:56.050754"
+    }, 
+    {
+        "keys": [
+            "grossman", 
+            "life", 
+            "that", 
+            "make", 
+            "wishing", 
+            "single", 
+            "doesnt", 
+            "lesson", 
+            "teaches", 
+            "theres"
+        ], 
+        "text": "If there\u2019s a single lesson that life teaches us, it\u2019s that wishing doesn\u2019t make it so. Lev Grossman\n", 
+        "time": "2018-12-26 11:17:56.050782"
+    }, 
+    {
+        "keys": [
+            "santosh", 
+            "anything", 
+            "thinking", 
+            "cannot", 
+            "thoughts", 
+            "addicted", 
+            "kalwar", 
+            "change"
+        ], 
+        "text": "We are addicted to our thoughts. We cannot change anything if we cannot change our thinking. Santosh Kalwar\n", 
+        "time": "2018-12-26 11:17:56.050810"
+    }, 
+    {
+        "keys": [
+            "story", 
+            "someone", 
+            "success", 
+            "drucker", 
+            "decision", 
+            "courageous", 
+            "will", 
+            "made", 
+            "every", 
+            "peter", 
+            "find"
+        ], 
+        "text": "In every success story, you will find someone who has made a courageous decision. Peter F. Drucker\n", 
+        "time": "2018-12-26 11:17:56.050838"
+    }, 
+    {
+        "keys": [
+            "endured", 
+            "life", 
+            "hinckley", 
+            "enjoyed", 
+            "gordon"
+        ], 
+        "text": "Life is to enjoyed, not endured. Gordon Hinckley\n", 
+        "time": "2018-12-26 11:17:56.050855"
+    }, 
+    {
+        "keys": [
+            "different", 
+            "dont", 
+            "bennett", 
+            "understand", 
+            "judge", 
+            "instead"
+        ], 
+        "text": "We are all different. Don\u2019t judge, understand instead. Roy T. Bennett\n", 
+        "time": "2018-12-26 11:17:56.050876"
+    }, 
+    {
+        "keys": [
+            "popular", 
+            "what", 
+            "right", 
+            "bennett", 
+            "easy"
+        ], 
+        "text": "Do what is right, not what is easy nor what is popular. Roy T. Bennett\n", 
+        "time": "2018-12-26 11:17:56.050898"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "dont", 
+            "once", 
+            "around", 
+            "stop", 
+            "fast", 
+            "ferris", 
+            "while", 
+            "bueller", 
+            "pretty", 
+            "moves", 
+            "miss", 
+            "could", 
+            "look"
+        ], 
+        "text": "Life moves pretty fast. If you don\u2019t stop and look around once in a while you could miss it. Ferris Bueller\n", 
+        "time": "2018-12-26 11:17:56.050930"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "lost", 
+            "calculating", 
+            "this", 
+            "always", 
+            "safeguarding", 
+            "planning", 
+            "arranging", 
+            "whole", 
+            "osho", 
+            "fearoriented"
+        ], 
+        "text": "A fear-oriented man is always calculating, planning, arranging, safeguarding. His whole life is lost in this way. Osho\n", 
+        "time": "2018-12-26 11:17:56.050961"
+    }, 
+    {
+        "keys": [
+            "neverending", 
+            "afraid", 
+            "manson", 
+            "point", 
+            "youre", 
+            "stop", 
+            "spiral", 
+            "mark", 
+            "itself", 
+            "because", 
+            "allowed", 
+            "climbing", 
+            "climb", 
+            "think", 
+            "missing", 
+            "upward"
+        ], 
+        "text": "See: it\u2019s a never-ending upward spiral. And if you think at any point you\u2019re allowed to stop climbing, I\u2019m afraid you\u2019re missing the point. Because the joy is in the climb itself. Mark Manson\n", 
+        "time": "2018-12-26 11:17:56.051007"
+    }, 
+    {
+        "keys": [
+            "spiritual", 
+            "dont", 
+            "give", 
+            "fucking", 
+            "fuck", 
+            "have", 
+            "crisis", 
+            "manson", 
+            "even", 
+            "what", 
+            "anymore", 
+            "opportunities", 
+            "mark", 
+            "much", 
+            "that", 
+            "material", 
+            "know", 
+            "about", 
+            "longer", 
+            "many", 
+            "stuff", 
+            "existential"
+        ], 
+        "text": "Our crisis is no longer material; it\u2019s existential, it\u2019s spiritual. We have so much fucking stuff and so many opportunities that we don\u2019t even know what to give a fuck about anymore. Mark Manson\n", 
+        "time": "2018-12-26 11:17:56.051054"
+    }, 
+    {
+        "keys": [
+            "then", 
+            "life", 
+            "that", 
+            "movie", 
+            "into", 
+            "admit", 
+            "possibility", 
+            "destroyed", 
+            "reason", 
+            "christopher", 
+            "human", 
+            "mccandless", 
+            "wild", 
+            "ruled"
+        ], 
+        "text": "If we admit that human life can be ruled by reason, then all possibility of life is destroyed. Christopher McCandless (Into The Wild movie)\n", 
+        "time": "2018-12-26 11:17:56.051089"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "just", 
+            "reach", 
+            "gotta", 
+            "when", 
+            "christopher", 
+            "something", 
+            "want", 
+            "mccandless", 
+            "wild", 
+            "movie", 
+            "grab", 
+            "into"
+        ], 
+        "text": "When you want something in life, you just gotta reach out and grab it. Christopher McCandless (Into The Wild movie)\n", 
+        "time": "2018-12-26 11:17:56.051120"
+    }, 
+    {
+        "keys": [
+            "control", 
+            "about", 
+            "shift", 
+            "energy", 
+            "bennett", 
+            "what", 
+            "your", 
+            "cannot", 
+            "instead", 
+            "create", 
+            "worrying"
+        ], 
+        "text": "Instead of worrying about what you cannot control, shift your energy to what you can create. Roy T. Bennett\n", 
+        "time": "2018-12-26 11:17:56.051152"
+    }, 
+    {
+        "keys": [
+            "pope", 
+            "shall", 
+            "never", 
+            "blessed", 
+            "expects", 
+            "nothing", 
+            "disappointed", 
+            "alexander"
+        ], 
+        "text": "Blessed is he who expects nothing, for he shall never be disappointed. Alexander Pope\n", 
+        "time": "2018-12-26 11:17:56.051177"
+    }, 
+    {
+        "keys": [
+            "living", 
+            "complicate", 
+            "people", 
+            "zafn", 
+            "tend", 
+            "their", 
+            "enough", 
+            "already", 
+            "lives", 
+            "ruiz", 
+            "werent", 
+            "complicated", 
+            "carlos"
+        ], 
+        "text": "People tend to complicate their own lives, as if living weren\u2019t already complicated enough. Carlos Ruiz Zaf\u00f3n\n", 
+        "time": "2018-12-26 11:17:56.051206"
+    }, 
+    {
+        "keys": [
+            "brown", 
+            "good", 
+            "from", 
+            "experience", 
+            "rita", 
+            "judgment", 
+            "comes"
+        ], 
+        "text": "Good judgment comes from experience, and experience comes from bad judgment. Rita Mae Brown\n", 
+        "time": "2018-12-26 11:17:56.051231"
+    }, 
+    {
+        "keys": [
+            "living", 
+            "life", 
+            "necessary", 
+            "telescope", 
+            "seuss", 
+            "that", 
+            "what", 
+            "looking", 
+            "fantasy", 
+            "wrong", 
+            "through", 
+            "which", 
+            "lifes", 
+            "enables", 
+            "realities", 
+            "laugh", 
+            "ingredient"
+        ], 
+        "text": "Fantasy is a necessary ingredient in living, it\u2019s a way of looking at life through the wrong end of a telescope. Which is what I do, and that enables you to laugh at life\u2019s realities. Dr. Seuss\n", 
+        "time": "2018-12-26 11:17:56.051277"
+    }, 
+    {
+        "keys": [
+            "about", 
+            "people", 
+            "always", 
+            "what", 
+            "will", 
+            "their", 
+            "other", 
+            "prisoner", 
+            "think", 
+            "care"
+        ], 
+        "text": "Care about what other people think and you will always be their prisoner. Lao Tzu\n", 
+        "time": "2018-12-26 11:17:56.051302"
+    }, 
+    {
+        "keys": [
+            "bridge", 
+            "life", 
+            "russell", 
+            "burn", 
+            "cross", 
+            "david", 
+            "thing", 
+            "hardest", 
+            "which", 
+            "learn"
+        ], 
+        "text": "The hardest thing to learn in life is which bridge to cross and which bridge to burn. David Russell\n", 
+        "time": "2018-12-26 11:17:56.051331"
+    }, 
+    {
+        "keys": [
+            "life", 
+            "oprah", 
+            "what", 
+            "courage", 
+            "have", 
+            "winfrey"
+        ], 
+        "text": "You get in life what you have the courage to ask for. Oprah Winfrey\n", 
+        "time": "2018-12-26 11:17:56.051353"
+    }, 
+    {
+        "keys": [
+            "creates", 
+            "life", 
+            "like", 
+            "natural", 
+            "dont", 
+            "that", 
+            "series", 
+            "sorrow", 
+            "flow", 
+            "them", 
+            "whatever", 
+            "reality", 
+            "resist", 
+            "only", 
+            "changes", 
+            "they", 
+            "things", 
+            "forward", 
+            "spontaneous", 
+            "naturally"
+        ], 
+        "text": "Life is a series of natural and spontaneous changes. Don\u2019t resist them \u2013 that only creates sorrow. Let reality be reality. Let things flow naturally forward in whatever way they like. Lao Tzu\n", 
+        "time": "2018-12-26 11:17:56.051400"
+    }
+]

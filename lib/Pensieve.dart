@@ -33,7 +33,7 @@ class Message {
 
     time = DateTime.tryParse(json["time"]);
     keys = Set<String>.from(json["keys"]);
-    text = json["text"];
+    text = json["text"].trim();
   }
 
   Map<String, dynamic> toJson() {
@@ -73,7 +73,7 @@ class FileManager {
       String dynamicContent = await file.readAsString();
       print(dynamicContent);
 
-      List<Message> dynamicResult = _loadContent(dynamicContent);
+      List<Message> dynamicResult = _loadContent(dynamicContent, hasBrackets: false);
       return (staticResult + dynamicResult);
     } catch (e) {
       // for some reason can't print stuff here
@@ -81,13 +81,13 @@ class FileManager {
     }
   }
 
-  List<Message> _loadContent(String content) {
+  List<Message> _loadContent(String content, {bool hasBrackets = true}) {
     if (content.isEmpty) {
       print("JSON is empty!");
       return [];
     }
 
-    final jsonParse = json.decode("[" + content + "]");
+    final jsonParse = json.decode(hasBrackets ? content : "[" + content + "]");
     if (jsonParse is Map) {
       print("JSON is not a list!");
       return [];
@@ -136,7 +136,7 @@ class Pensieve {
   List<Message> find(DateTime time, List<String> keyList) {
     var keys = Set<String>();
     for (final k in keyList) {
-      keys.add(k);
+      keys.add(_sanitizeKey(k));
     }
 
     List<Message> result = [];
@@ -153,15 +153,28 @@ class Pensieve {
   }
 
   // key utility functions
-  bool keysContain(String key, Set<String> keys) {
-    return keys.contains(key);
+  bool keysContain(String word, Set<String> keys) {
+    return keys.contains(_sanitizeKey(word));
   }
 
-  void keysAdd(String key, Set<String> keys) {
-    keys.add(key);
+  void keysAdd(String word, Set<String> keys) {
+    keys.add(_sanitizeKey(word));
   }
 
-  void keysRemove(String key, Set<String> keys) {
-    keys.remove(key);
+  void keysRemove(String word, Set<String> keys) {
+    keys.remove(_sanitizeKey(word));
+  }
+
+  String _sanitizeKey(String word) {
+    // ignore case, drop spaces and punctuation marks
+    String key = word.toLowerCase();
+    String temp = "";
+    for (int i = 0; i < key.length; ++i) {
+      var c = key.codeUnitAt(i);
+      if ((c >= 97 && c <= 122) || (c >= 48 && c <= 57)) {
+        temp += key[i];
+      }
+    }
+    return temp;
   }
 }

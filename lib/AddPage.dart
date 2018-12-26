@@ -27,7 +27,7 @@ class ClickableTextState extends State<ClickableText> {
     return InkWell(
       onTap: () {
         setState(() {
-          if (widget.keys.contains(word)) {
+          if (widget.pensieve.keysContain(word, widget.keys)) {
             widget.pensieve.keysRemove(word, widget.keys);
           } else {
             widget.pensieve.keysAdd(word, widget.keys);
