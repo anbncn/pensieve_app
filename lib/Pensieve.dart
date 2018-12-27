@@ -1,14 +1,10 @@
 import "dart:async";
 import "dart:io";
 import "dart:convert";
-import 'package:flutter/services.dart' show rootBundle;
 
 import "package:path_provider/path_provider.dart";
 
 // Awesome data structure which provides add,search,remove of messages
-
-// can potentially use FireBase to save data on google cloud
-// for now we use local json files
 
 class Message {
   DateTime time;
@@ -19,7 +15,7 @@ class Message {
 
   @override
   String toString() {
-    String str = "Message is";
+    String str = "Message =";
     str += " time:" + time.toString();
     str += " keys:" + keys.toString();
     str += " text:" + text;
@@ -46,38 +42,77 @@ class Message {
 }
 
 class FileManager {
-  Future<String> get _localPath async {
+  Future<String> get localPath async {
     final dir = await getApplicationDocumentsDirectory();
     return dir.path;
   }
 
-  Future<File> get _localFile async {
-    final path = await _localPath;
-    print(path);
-    return File("$path/messages.json");
+  Future<File> get localFile async {
+    final path = await localPath;
+    final file = File("$path/messages.json");
+    final exists = await file.exists();
+    if (!exists) {
+      print("JSON creating!");
+      await file.writeAsString('[\n]');
+    }
+    return file;
   }
 
-  Future<File> write(int index, Message msg) async {
-    final file = await _localFile;
+  Future<bool> reset() async {
+    try {
+      final file = await localFile;
+      await file.delete();
+    } catch (e) {
+      print(e.toString());
+      return false;
+    }
+    print("JSON reset!");
+    return true;
+  }
+
+  Future<bool> write(int index, Message msg) async {
+    final file = await localFile;
+    RandomAccessFile rafile = await file.open(mode: FileMode.append);
+    print(rafile.lengthSync());
+    sleep(const Duration(seconds:1));
+
+    final pos = rafile.positionSync() - 1;
+    rafile.setPositionSync(pos);
+
+    // for some reason readByteSync throws upon unpause if you just hot reload
+    // maybe because somehow the app still uses an older code when unpausing
+    // reload after wiping data to make sure the app uses "consistent" code
+    if (rafile.readByteSync() != 93) {
+      print("JSON last byte not ]!");
+      rafile.close();
+      return false;
+    }
+    rafile.setPositionSync(pos);
+
     final String comma = (index == 1) ? "" : ",";
-    return file.writeAsString(comma + json.encode(msg),
-        mode: FileMode.writeOnlyAppend);
+
+    try {
+      rafile.writeString(comma + json.encode(msg) + "\n]").then((f) =>
+          f.close());
+    } catch (e) {
+      print(e.toString());
+      return false;
+    }
+
+    return true;
   }
 
   Future<List<Message>> read() async {
-    String staticContent = await rootBundle.loadString('assets/messages.json');
-    List<Message> staticResult = _loadContent(staticContent);
-
+    print("in read");
     try {
-      final file = await _localFile;
-      String dynamicContent = await file.readAsString();
-      print(dynamicContent);
-
-      List<Message> dynamicResult = _loadContent(dynamicContent, hasBrackets: false);
-      return (staticResult + dynamicResult);
+      final file = await localFile;
+      String content = await file.readAsString();
+      print(content);
+      return _loadContent(content);
     } catch (e) {
-      // for some reason can't print stuff here
-      return staticResult;
+      // for some reason can't print other stuff here
+      print("Exception" + e.toString());
+      return [];
     }
   }
 
@@ -99,16 +134,20 @@ class FileManager {
 }
 
 class Pensieve {
-  List<Message> messages = [];
   FileManager fileManager = FileManager();
+  List<Message> _messages = [];
 
-  Pensieve() {
+  Pensieve() { loadFile(); }
+
+  // can be called from outside (for ex. when file changes externally)
+  void loadFile() {
+    _messages = [];
     fileManager.read().then((results) {
-      messages = results;
+      _messages = results;
+      for (final msg in _messages) {
+        print(msg.toString());
+      }
     });
-    for (final msg in messages) {
-      print(msg.text);
-    }
   }
 
   Set<String> getKeywords(DateTime time, String text) {
@@ -118,7 +157,7 @@ class Pensieve {
   }
 
   bool commit(DateTime time, Set<String> keys, String text) {
-    for (final msg in messages) {
+    for (final msg in _messages) {
       if (msg.time == time || msg.keys == keys || msg.text == text) {
         return true;
       }
@@ -126,9 +165,9 @@ class Pensieve {
 
     final msg = Message(time, keys, text);
     // List::add returns void
-    messages.add(msg);
-    fileManager.write(messages.length, msg).then((file) {
-      print("JSON write done!");
+    _messages.add(msg);
+    fileManager.write(_messages.length, msg).then((status) {
+      print("JSON write done=$status!");
     });
     return true;
   }
@@ -140,7 +179,7 @@ class Pensieve {
     }
 
     List<Message> result = [];
-    for (final msg in messages) {
+    for (final msg in _messages) {
       if (keys.intersection(msg.keys).isNotEmpty) {
         result.add(msg);
       }
@@ -149,7 +188,7 @@ class Pensieve {
   }
 
   bool remove(Message msg) {
-    return messages.remove(msg);
+    return _messages.remove(msg);
   }
 
   // key utility functions

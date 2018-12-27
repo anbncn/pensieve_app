@@ -19,7 +19,7 @@ class BackupPage extends StatefulWidget {
 class _BackupPageState extends State<BackupPage> {
   GoogleSignIn _googleSignIn = GoogleSignIn();
   FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-
+  String userId;
   bool signedIn = false;
 
   Future<bool> _signInWithGoogle() async {
@@ -43,6 +43,8 @@ class _BackupPageState extends State<BackupPage> {
         accessToken: auth.accessToken
     );
 
+    userId = fireUser.uid;
+
     print(fireUser.toString());
 
     return _googleSignIn.isSignedIn();
@@ -57,21 +59,29 @@ class _BackupPageState extends State<BackupPage> {
   void _backup() async {
     // get file from pensieve later
     final dir = await getApplicationDocumentsDirectory();
-    final file = File("${dir.path}/messages.json");
+    final file = await widget.pensieve.fileManager.localFile;
+    final cloudPath = 'users/' + userId + "/" + 'messages.json';
 
-    final StorageReference ref = FirebaseStorage.instance.ref().child('user/messages.json');
+    final StorageReference ref = FirebaseStorage.instance.ref().child(cloudPath);
     final StorageUploadTask task = ref.putFile(file);
   }
 
   void _fetch() async {
     final dir = await getApplicationDocumentsDirectory();
     final file = File("${dir.path}/messages.json");
+    final cloudPath = 'users/' + userId + "/" + 'messages.json';
 
-    final StorageReference ref = FirebaseStorage.instance.ref().child('user/messages.json');
+    final StorageReference ref = FirebaseStorage.instance.ref().child(cloudPath);
     final StorageFileDownloadTask task = ref.writeToFile(file);
 
-    String dynamicContent = await file.readAsString();
-    print(dynamicContent);
+    // wait for download to complete and then reload
+    final snapshot = await task.future;
+    widget.pensieve.loadFile();
+  }
+
+  void _reset() async {
+    await widget.pensieve.fileManager.reset();
+    widget.pensieve.loadFile();
   }
 
   // shorthand
@@ -103,7 +113,7 @@ class _BackupPageState extends State<BackupPage> {
               children: <Widget>[
                 RaisedButton(
                     onPressed: () { _googleSignIn.isSignedIn().then(_redraw); },
-                    child: Text('STATUS')
+                    child: Text('LOGIN STATUS')
                 ),
                 Text(signedIn ? '  Signed In  ' : '  Not Signed In  '),
               ],
@@ -113,7 +123,7 @@ class _BackupPageState extends State<BackupPage> {
               children: <Widget>[
                 RaisedButton(
                     onPressed: signedIn ? _fetch : null,
-                    child: Text('DOWNLOAD')
+                    child: Text('DOWNLOAD CLOUD COPY')
                 ),
                 Text('  last_backup_time and size  '),
               ],
@@ -123,7 +133,17 @@ class _BackupPageState extends State<BackupPage> {
               children: <Widget>[
                 RaisedButton(
                     onPressed: signedIn ? _backup : null,
-                    child: Text('UPLOAD')
+                    child: Text('UPLOAD LOCAL COPY')
+                ),
+                Text('  last_time and size  '),
+              ],
+            ),),
+            Expanded(flex: 1, child: Container(),),
+            Expanded(flex: 1, child: Row(
+              children: <Widget>[
+                RaisedButton(
+                    onPressed: _reset,
+                    child: Text('RESET LOCAL COPY')
                 ),
                 Text('  last_time and size  '),
               ],

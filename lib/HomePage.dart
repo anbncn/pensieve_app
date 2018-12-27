@@ -9,6 +9,10 @@ import 'SearchPage.dart';
 import 'SettingsPage.dart';
 
 class HomePage extends StatefulWidget {
+  final Pensieve pensieve;
+
+  HomePage({Key key, this.pensieve}) : super(key: key);
+
   @override
   HomePageState createState() {
     return HomePageState();
@@ -16,8 +20,6 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  Pensieve pensieve = Pensieve();
-
   Widget _buildAppBar(BuildContext context) {
     return AppBar(
       title: Text("Pensieve"),
@@ -65,7 +67,7 @@ class HomePageState extends State<HomePage> {
             context,
             MaterialPageRoute(
                 builder: (context) => AddPage(
-                      pensieve: pensieve,
+                      pensieve: widget.pensieve,
                     )));
       },
     );
@@ -73,7 +75,7 @@ class HomePageState extends State<HomePage> {
 
   Widget _buildBody(BuildContext context) {
     return SearchPage(
-      pensieve: pensieve,
+      pensieve: widget.pensieve,
     );
   }
 
@@ -93,7 +95,7 @@ class HomePageState extends State<HomePage> {
         break;
       case "Backup":
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => BackupPage(pensieve: pensieve)));
+            context, MaterialPageRoute(builder: (context) => BackupPage(pensieve: widget.pensieve)));
         break;
     }
   }
