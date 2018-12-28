@@ -42,6 +42,12 @@ class Message {
 }
 
 class FileManager {
+  // hack as its sort of impossible to get file size synchronously
+  int _fileSize = 0;
+  int get fileSize {
+    return _fileSize;
+  }
+
   Future<String> get localPath async {
     final dir = await getApplicationDocumentsDirectory();
     return dir.path;
@@ -54,6 +60,7 @@ class FileManager {
     if (!exists) {
       print("JSON creating!");
       await file.writeAsString('[\n]');
+      _fileSize = 0;
     }
     return file;
   }
@@ -62,6 +69,7 @@ class FileManager {
     try {
       final file = await localFile;
       await file.delete();
+      _fileSize = 0;
     } catch (e) {
       print(e.toString());
       return false;
@@ -71,29 +79,30 @@ class FileManager {
   }
 
   Future<bool> write(int index, Message msg) async {
-    final file = await localFile;
-    RandomAccessFile rafile = await file.open(mode: FileMode.append);
-    print(rafile.lengthSync());
-    sleep(const Duration(seconds:1));
-
-    final pos = rafile.positionSync() - 1;
-    rafile.setPositionSync(pos);
-
-    // for some reason readByteSync throws upon unpause if you just hot reload
-    // maybe because somehow the app still uses an older code when unpausing
-    // reload after wiping data to make sure the app uses "consistent" code
-    if (rafile.readByteSync() != 93) {
-      print("JSON last byte not ]!");
-      rafile.close();
-      return false;
-    }
-    rafile.setPositionSync(pos);
-
-    final String comma = (index == 1) ? "" : ",";
-
     try {
-      rafile.writeString(comma + json.encode(msg) + "\n]").then((f) =>
-          f.close());
+      final file = await localFile;
+      RandomAccessFile rafile = await file.open(mode: FileMode.append);
+      print(rafile.lengthSync());
+      sleep(const Duration(seconds: 1));
+
+      final pos = rafile.positionSync() - 1;
+      rafile.setPositionSync(pos);
+
+      // for some reason readByteSync throws upon unpause if you just hot reload
+      // maybe because somehow the app still uses an older code when unpausing
+      // reload after wiping data to make sure the app uses "consistent" code
+      if (rafile.readByteSync() != 93) {
+        print("JSON last byte not ]!");
+        rafile.close();
+        return false;
+      }
+      rafile.setPositionSync(pos);
+
+      final String comma = (index == 1) ? "" : ",";
+      await rafile.writeString(comma + json.encode(msg) + "\n]");
+      rafile.close();
+
+      _fileSize = file.lengthSync();
     } catch (e) {
       print(e.toString());
       return false;
@@ -103,11 +112,11 @@ class FileManager {
   }
 
   Future<List<Message>> read() async {
-    print("in read");
     try {
       final file = await localFile;
       String content = await file.readAsString();
-      print(content);
+      //print(content);
+      _fileSize = file.lengthSync();
       return _loadContent(content);
     } catch (e) {
       // for some reason can't print other stuff here
@@ -137,7 +146,18 @@ class Pensieve {
   FileManager fileManager = FileManager();
   List<Message> _messages = [];
 
-  Pensieve() { loadFile(); }
+  Pensieve() {
+    loadFile();
+  }
+
+  int get numMessages {
+    return _messages.length;
+  }
+
+  DateTime get lastModified {
+    final time = (numMessages > 0) ? _messages[numMessages - 1].time : null;
+    return time;
+  }
 
   // can be called from outside (for ex. when file changes externally)
   void loadFile() {
@@ -145,7 +165,7 @@ class Pensieve {
     fileManager.read().then((results) {
       _messages = results;
       for (final msg in _messages) {
-        print(msg.toString());
+        //print(msg.toString());
       }
     });
   }
